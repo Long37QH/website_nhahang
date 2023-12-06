@@ -8,7 +8,7 @@
                             <div class="col-md-6">
                                 <div class="footer-contact">
                                     <h2>Liên Hệ</h2>
-                                    <p><i class="fa fa-map-marker-alt"></i>109 Phượng hoàng trung đô, Tp Vinh</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>182 Lê Duẩn, Bến Thủy, Tp Vinh</p>
                                     <p><i class="fa fa-phone-alt"></i>0399876456</p>
                                     <p><i class="fa fa-envelope"></i>food247@gmail.com</p>
                                     <div class="footer-social">

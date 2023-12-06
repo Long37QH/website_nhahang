@@ -2,11 +2,37 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
   <display-name>Nhahang247</display-name>
   <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-    <welcome-file>default.htm</welcome-file>
+    <welcome-file>danhmucServlet</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>danhmucServlet</display-name>
+    <servlet-name>danhmucServlet</servlet-name>
+    <servlet-class>controllers.danhmucServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>danhmucServlet</servlet-name>
+    <url-pattern>/danhmucServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>baivietServlet</display-name>
+    <servlet-name>baivietServlet</servlet-name>
+    <servlet-class>controllers.baivietServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>baivietServlet</servlet-name>
+    <url-pattern>/baivietServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>baiviet_detialServlet</display-name>
+    <servlet-name>baiviet_detialServlet</servlet-name>
+    <servlet-class>controllers.baiviet_detialServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>baiviet_detialServlet</servlet-name>
+    <url-pattern>/baiviet_detialServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

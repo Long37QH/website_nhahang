@@ -23,6 +23,7 @@
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
         <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"  >
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
@@ -44,7 +45,7 @@
                         <a href="team.jsp" class="nav-item nav-link">Đầu bếp</a>
                         <a href="menu.jsp" class="nav-item nav-link">Thực đơn</a>
                         <a href="booking.jsp" class="nav-item nav-link">Đặt bàn</a>
-                        <a href="blog.jsp" class="nav-item nav-link">Bài viết</a>
+                        <a href="baivietServlet" class="nav-item nav-link">Bài viết</a>
                         <!--  <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Bài viết</a>
                             <div class="dropdown-menu">
@@ -53,7 +54,7 @@
                             </div>
                         </div>-->
                         <a href="contact.jsp" class="nav-item nav-link">Liên hệ</a>
-                        <a href="admin/login.jsp" class="nav-item nav-link">Đăng nhập</a>
+                        <a href="#" class="nav-item nav-link"><i class="fa-solid fa-circle-user fa-2xl"></i></a>
                     </div>
                 </div>
             </div>
