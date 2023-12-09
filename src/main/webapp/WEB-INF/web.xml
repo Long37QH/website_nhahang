@@ -35,4 +35,44 @@
     <servlet-name>baiviet_detialServlet</servlet-name>
     <url-pattern>/baiviet_detialServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ds_baivietServlet</display-name>
+    <servlet-name>ds_baivietServlet</servlet-name>
+    <servlet-class>controllers.ds_baivietServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ds_baivietServlet</servlet-name>
+    <url-pattern>/ds_baivietServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>add_baivietServlet</display-name>
+    <servlet-name>add_baivietServlet</servlet-name>
+    <servlet-class>controllers.add_baivietServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>add_baivietServlet</servlet-name>
+    <url-pattern>/add_baivietServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>delete_baivietServlet</display-name>
+    <servlet-name>delete_baivietServlet</servlet-name>
+    <servlet-class>controllers.delete_baivietServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete_baivietServlet</servlet-name>
+    <url-pattern>/delete_baivietServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>suabv_Servlet</display-name>
+    <servlet-name>suabv_Servlet</servlet-name>
+    <servlet-class>controllers.suabv_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>suabv_Servlet</servlet-name>
+    <url-pattern>/suabv_Servlet</url-pattern>
+  </servlet-mapping>
 </web-app>

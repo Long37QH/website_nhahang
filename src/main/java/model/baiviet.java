@@ -9,15 +9,26 @@ public class baiviet {
 	private String noidung;
 	private String hinhanh;
 	private String tacgia;
-	private Date ngayviet;
+	private String ngayviet;
 	private String trangthaibv;
 	
 	public baiviet() {
 		
 	}
 	
-	public baiviet(int id_baiviet,String tenbai,String danhmucbv,String tomtatbv,String noidung,String hinhanh,String tacgia,Date ngayviet,String trangthaibv) {
+	public baiviet(int id_baiviet,String tenbai,String danhmucbv,String tomtatbv,String noidung,String hinhanh,String tacgia,String ngayviet,String trangthaibv) {
 		this.id_baiviet = id_baiviet;
+		this.tenbai = tenbai;
+		this.danhmucbv = danhmucbv;
+		this.tomtatbv = tomtatbv;
+		this.noidung = noidung;
+		this.hinhanh = hinhanh;
+		this.tacgia = tacgia;
+		this.ngayviet = ngayviet;
+		this.trangthaibv = trangthaibv;
+	}
+	
+	public baiviet(String tenbai,String danhmucbv,String tomtatbv,String noidung,String hinhanh,String tacgia,String ngayviet,String trangthaibv) {
 		this.tenbai = tenbai;
 		this.danhmucbv = danhmucbv;
 		this.tomtatbv = tomtatbv;
@@ -70,10 +81,10 @@ public class baiviet {
 	public void setTacgia(String tacgia) {
 		this.tacgia = tacgia;
 	}
-	public Date getNgayviet() {
+	public String getNgayviet() {
 		return ngayviet;
 	}
-	public void setNgayviet(Date ngayviet) {
+	public void setNgayviet(String ngayviet) {
 		this.ngayviet = ngayviet;
 	}
 	public String getTrangthaibv() {
