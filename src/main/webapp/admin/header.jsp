@@ -262,9 +262,9 @@
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="ds_baivietServlet" aria-expanded="false"><i
                                     data-feather="message-square" class="feather-icon"></i><span class="hide-menu">Quản lý bài viết</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="#" aria-expanded="false"><i
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="ds_slideServlet" aria-expanded="false"><i
                                     data-feather="calendar" class="feather-icon"></i><span class="hide-menu">Quản lý slide</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link" href="#" aria-expanded="false"><i
+                        <li class="sidebar-item"> <a class="sidebar-link" href="ds_thucdonServlet" aria-expanded="false"><i
                                     data-feather="file-text" class="feather-icon"></i><span class="hide-menu"> Quản lý thực đơn
                                 </span></a>
                         </li>
@@ -274,10 +274,10 @@
                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
                                     class="hide-menu">Quản lý nhân viên </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span class="hide-menu"> Danh sách nhân viên
+                                <li class="sidebar-item"><a href="ds_nhanvienServlet" class="sidebar-link"><span class="hide-menu"> Danh sách nhân viên
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span class="hide-menu"> Thêm mới nhân viên
+                                <li class="sidebar-item"><a href="admin/addnhanvien.jsp" class="sidebar-link"><span class="hide-menu"> Thêm mới nhân viên
                                         </span></a>
                                 </li>
                             </ul>

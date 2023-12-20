@@ -264,10 +264,10 @@
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="../ds_baivietServlet"
                                 aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                                     class="hide-menu">Quản lý bài viết</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="#"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="ds_slideServlet"
                                 aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
                                     class="hide-menu">Quản lý slide</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link" href="ds_slideServlet"
+                        <li class="sidebar-item"> <a class="sidebar-link" href="../ds_thucdonServlet"
                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
                                     class="hide-menu"> Quản lý thực đơn
                                 </span></a>
@@ -278,7 +278,7 @@
                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
                                     class="hide-menu">Quản lý nhân viên </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="../nhanvienServlet" class="sidebar-link"><span
                                             class="hide-menu"> Danh sách nhân viên
                                         </span></a>
                                 </li>
@@ -353,99 +353,127 @@
             <!-- End Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
             <!-- ============================================================== -->
-            <!-- Container fluid  -->
+            <!-- làm việc ở đây nề   -->
             <!-- ============================================================== -->
-            <div class="container-fluid">
-		    <!-- form insert -->
-		    <div class="row">
-	                    <div class="col-12">
-	                        <div class="card">
-	                            <div class="card-body">
-	                                <h4 class="card-title">Nhập thông tin bài viết</h4>
-	                                <form action="../add_baivietServlet" method="post" >
-	                                    <div class="form-body">
-	                                        <label for="tenbai" >Tiêu đề bài viết </label>
-	                                        <div class="row">
-	                                            <div class="col-md-6">
-	                                                <div class="form-group">
-	                                                    <input type="text" name="tenbai" id="tenbai" class="form-control" placeholder="">
-	                                                </div>
-	                                            </div>
-	                                        </div>
-	                                        <label for="danhmucbv" >Danh mục </label>
-	                                        <div class="row">
-	                                            <div class="col-md-3">
-	                                                <div class="form-group">
-	                                                    <input type="text" name="danhmucbv" id="danhmucbv"  class="form-control" placeholder="Ẩm thực">
-	                                                </div>
-	                                            </div>
-	                                        </div>
-	                                        <label for="tomtatbv" >Tóm tắt </label>
-	                                        <div class="row">
-	                                            <div class="col-md-9">
-	                                                <div class="form-group">
-                                        				<textarea class="form-control" name="tomtatbv" id="tomtatbv"  rows="3" placeholder="Nội dung tóm tắt..."></textarea>
-                                    				</div>
-	                                            </div>
-	                                        </div>
-	                                        <label for="noidung" >Nội dung </label>
-	                                        <div class="row">
-	                                            <div class="col-md-9">
-	                                                <div class="form-group">
-                                        				<textarea class="form-control" name="noidung" id="noidung" rows="5" placeholder="Nội dung..."></textarea>
-                                    				</div>
-	                                            </div>
-	                                        </div>
-	                                        <label>Hình ảnh </label>
-	                                        <div class="row">
-	                                            <div class="input-group mb-3 col-md-6">
-	                                                <div class="input-group-prepend">
-                                            		<span class="input-group-text">Upload</span>
-                                        		</div>
-                                        		<div class="custom-file">
-                                            		<input type="file" class="custom-file-input" name="hinhanh"  id="hinhanh">
-                                            		<label class="custom-file-label" for="hinhanh">Choose file</label>
-                                        		</div>
-	                                            </div>
-	                                        </div>
-	                                        <label for="tacgia" >Tác giả </label>
-	                                        <div class="row">
-	                                            <div class="col-md-6">
-	                                                <div class="form-group">
-	                                                    <input type="text" name="tacgia" id="tacgia" class="form-control" placeholder="">
-	                                                </div>
-	                                            </div>
-	                                        </div>
-	                                        <label>Thời gian viêt </label>
-	                                        <div class="row">
-	                                            <div class="col-md-6">
-	                                                <div class="form-group">
-                                        				<input type="date" class="form-control" name="ngayviet" value="">
-                                    				</div>
-	                                            </div>
-	                                        </div>
-	                                         <label>Trạng thái bài viết </label>
-	                                        <div class="row">
-	                                            <div class="col-md-9">
-	                                                <select class="custom-select mr-sm-2 " name="trangthaibv" id="trangthaibv">
-			                                            <option value="Hiển thị">Hiển thị</option>
-			                                            <option value="Ẩn">Ẩn</option>
-			                                        </select>
-	                                            </div>
-	                                        </div>
-	                                    </div>
-	                                    <div class="form-actions">
-	                                        <div class="text-left mt-3 ">
-	                                            <button type="submit" class="btn btn-info">Lưu lại</button>
-	                                            <button type="reset" class="btn btn-dark">Huỷ</button>
-	                                        </div>
-	                                    </div>
-	                                </form>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-			<!-- footer -->
+<div class="container-fluid">
+    <!-- form insert -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Nhập thông tin món ăn</h4>
+                    <form action="../add_thucdonServlet" method="post">
+                        <div class="form-body">
+                            <label for="tenbai">Tên món ăn </label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="tenMonAn" id="tenMonAn" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <label>Danh mục </label>
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <select style="color: #000;" class="custom-select mr-sm-2 " name="loaiMonAn" id="loaiMonAn">
+                                        <option value="1">Bánh mì</option>
+                                        <option value="2">Đồ ăn nhẹ</option>
+                                        <option value="3">Đồ uống</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <label for="moTaTT">Tóm tắt </label>
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="moTaTT" id="moTaTT" rows="3" placeholder="Nội dung tóm tắt..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <label for="moTa">Nội dung </label>
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="moTa" id="moTa" rows="5" placeholder="Nội dung..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <label for="giaMonAn">giá bán</label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="giaMonAn" id="giaMonAn" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <label for="giamGia">giảm giá</label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="number" name="giamGia" id="giamGia" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <label>Hình ảnh </label>
+                            <div class="row">
+                                <div class="input-group mb-3 col-md-6">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Upload</span>
+                                    </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" name="hinhAnh" id="hinhAnh">
+                                        <label class="custom-file-label" for="hinhAnh">Choose file</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <label>Món ăn ưa thích</label>
+							<div class="row">
+							    <div class="col-md-9">
+							        <select class="custom-select mr-sm-2 " name="monAnPhoBien" id="monAnPhoBien">
+							            <option value="true">Hiển thị</option>
+							            <option value="false">Ẩn</option>
+							        </select>
+							    </div>
+							</div>
+                            <label>Hiện thị Trang chủ</label>
+							<div class="row">
+							    <div class="col-md-9">
+							        <select class="custom-select mr-sm-2 " name="hienThiTrangChu" id="hienThiTrangChu">
+							            <option value="true">Hiển thị</option>
+							            <option value="false">Ẩn</option>
+							        </select>
+							    </div>
+							</div>
+							<label>Trạng thái</label>
+							<div class="row">
+							    <div class="col-md-9">
+							        <select class="custom-select mr-sm-2 " name="trangThai" id="trangThai">
+							            <option value="true">Hiển thị</option>
+							            <option value="false">Ẩn</option>
+							        </select>
+							    </div>
+							</div>
+                            
+                        </div>
+
+                        <div class="form-actions">
+                            <div class="text-left mt-3">
+                                <button type="submit" class="btn btn-info">Lưu lại</button>
+                                <button type="reset" class="btn btn-dark">Huỷ</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+</div>
             <!-- ============================================================== -->
             <footer class="footer text-center text-muted">
                 All Rights Reserved by Adminmart. Designed and Developed by <a

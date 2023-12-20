@@ -14,7 +14,7 @@
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb m-0 p-0">
-                                    <li class="breadcrumb-item"><a href="">Quản lý bài viết</a>
+                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a>
                                     </li>
                                 </ol>
                             </nav>
@@ -44,7 +44,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-4">
-                                    <h4 class="card-title">Danh sách bài viết</h4>
+                                    <h4 class="card-title">Danh sách slide</h4>
                                     <div class="ml-auto">
                                         <div class="dropdown sub-dropdown">
                                             <!-- <button class="btn btn-link text-muted dropdown-toggle" type="button"
@@ -55,7 +55,7 @@
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd1">
                                                 <a class="dropdown-item" href="#">Thêm mới</a>
                                             </div> -->
-                                            <a href="admin/addbaiviet.jsp" class="btn waves-effect waves-light btn-success" ><i class="fa-solid fa-plus"></i> Thêm mới</a>
+                                            <a href="admin/addslide.jsp" class="btn waves-effect waves-light btn-success" ><i class="fa-solid fa-plus"></i> Thêm mới</a>
                                         </div>
                                     </div>
                                 </div>
@@ -65,28 +65,24 @@
                                         <thead>
                                             <tr>
                                                 <th>TT</th>
-                                                <th style="width:230px" >Tiêu Đề</th>
+                                                <th>Tiêu Đề</th>
                                                 <th>Hình ảnh</th>
-                                                <th>Tác giả</th>
-                                                <th>Ngày Đăng</th>
-                                                <th>Trạng Thái</th>
+                                                <th>Trạng thái slide</th>                                             
                                                 <th>Tác Vụ</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <c:forEach items = "${list_bv}" var = "listbv" >
+                                       <c:forEach var="listslide" items = "${data}" >
                                             <tr>
-                                                <td>${listbv.id_baiviet}</td>
-                                                <td>${listbv.tenbai}</td>
+                                                <td>${listslide.id_slide}</td>
+                                                <td>${listslide.tieude}</td>                                              
                                                 <td>
-                                                    <img style="width: 150px;" src="${listbv.hinhanh}" alt="">
-                                                </td>
-                                                <td>${listbv.tacgia}</td>
-                                                <td>${listbv.ngayviet}</td>
-                                                <td>${listbv.trangthaibv}</td>
+                                                    <img style="width: 100px;" src="img/${listslide.hinhanh}" alt="">
+                                                </td>                   
+                                                <td>${listslide.trangthai_slide}</td>  
                                                 <td>
-                                                    <a class="btn waves-effect waves-light btn-info" href="suabv_Servlet?id=${listbv.id_baiviet}">Sửa</a>
-                                                    <a onclick="return confirm('bạn có muốn xoá không ?');" class="btn waves-effect waves-light btn-danger" href="delete_baivietServlet?id=${listbv.id_baiviet}">Xoá</a>
+                                                    <a class="btn waves-effect waves-light btn-info" href="update_nhanvienServlet?id=${list.id_nhanvien}">Sửa</a>
+                                                    <a onclick="return confirm('bạn có muốn xoá không ?');" class="btn waves-effect waves-light btn-danger" href="delete_nhanvienServlet?id=${list.id_nhanvien}">Xoá</a>
                                                 </td>
                                             </tr>
                                             </c:forEach>

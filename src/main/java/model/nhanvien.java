@@ -24,6 +24,15 @@ public class nhanvien {
 		this.diachi = diachi;
 		this.gioitinh = gioitinh;
 	}
+	public nhanvien(String tenNV,String ChuVu,String hinhanh,String sdt,String email,String diachi,String gioitinh) {
+		this.tenNV = tenNV;
+		this.ChuVu = ChuVu;
+		this.hinhanh = hinhanh;
+		this.sdt = sdt;
+		this.email = email;
+		this.diachi = diachi;
+		this.gioitinh = gioitinh;
+	}
 
 	public int getId_nhanvien() {
 		return id_nhanvien;

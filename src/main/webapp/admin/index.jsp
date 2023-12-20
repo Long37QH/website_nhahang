@@ -263,10 +263,10 @@
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="../ds_baivietServlet"
                                 aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                                     class="hide-menu">Quản lý bài viết</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="#"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="../ds_slideServlet"
                                 aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
                                     class="hide-menu">Quản lý slide</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link" href="#"
+                        <li class="sidebar-item"> <a class="sidebar-link" href="../ds_thucdonServlet"
                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
                                     class="hide-menu"> Quản lý thực đơn
                                 </span></a>
@@ -277,11 +277,11 @@
                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
                                     class="hide-menu">Quản lý nhân viên </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="../ds_nhanvienServlet" class="sidebar-link"><span
                                             class="hide-menu"> Danh sách nhân viên
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="addnhanvien.jsp" class="sidebar-link"><span
                                             class="hide-menu"> Thêm mới nhân viên
                                         </span></a>
                                 </li>
@@ -333,11 +333,11 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-7 align-self-center">
-                        <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Good Morning Jason!</h3>
+                        <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Chào mừng bạn đến với trang quản trị!</h3>
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb m-0 p-0">
-                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a>
+                                    <li class="breadcrumb-item"><a href="">Trang quản trị</a>
                                     </li>
                                 </ol>
                             </nav>

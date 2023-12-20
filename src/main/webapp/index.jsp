@@ -1,56 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <%@include file="Header.jsp" %>
 
         <!-- Carousel Start -->
         <div class="carousel">
             <div class="container-fluid">
                 <div class="owl-carousel">
+                	<c:forEach items = "${list_slide}" var = "listslide">
                     <div class="carousel-item">
                         <div class="carousel-img">
-                            <img src="img/carousel-1.jpg" alt="Image">
+                            <img src="img/${listslide.hinhanh}" alt="Image">
                         </div>
                         <div class="carousel-text">
-                            <h1>Best <span>Quality</span> Ingredients</h1>
+                            <h2 style="color:white; text-align:center;" >${listslide.tieude}</h1>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac consequat at lectus in malesuada
+                                ${listslide.noidung}
                             </p>
                             <div class="carousel-btn">
-                                <a class="btn custom-btn" href="">View Menu</a>
-                                <a class="btn custom-btn" href="">Book Table</a>
+                                <a class="btn custom-btn" href="thucdonServlet">Thực đơn</a>
+                                <a class="btn custom-btn" href="booking.jsp">Đặt bàn</a>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="carousel-img">
-                            <img src="img/carousel-2.jpg" alt="Image">
-                        </div>
-                        <div class="carousel-text">
-                            <h1>World’s <span>Best</span> Chef</h1>
-                            <p>
-                                Morbi sagittis turpis id suscipit feugiat. Suspendisse eu augue urna. Morbi sagittis, orci sodales varius fermentum, tortor
-                            </p>
-                            <div class="carousel-btn">
-                                <a class="btn custom-btn" href="">View Menu</a>
-                                <a class="btn custom-btn" href="">Book Table</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-img">
-                            <img src="img/carousel-3.jpg" alt="Image">
-                        </div>
-                        <div class="carousel-text">
-                            <h1>Fastest Order <span>Delivery</span></h1>
-                            <p>
-                                Sed ultrices, est eget feugiat accumsan, dui nibh egestas tortor, ut rhoncus nibh ligula euismod quam. Proin pellentesque odio
-                            </p>
-                            <div class="carousel-btn">
-                                <a class="btn custom-btn" href="">View Menu</a>
-                                <a class="btn custom-btn" href="">Book Table</a>
-                            </div>
-                        </div>
-                    </div>
+                    </c:forEach>
                 </div>
             </div>
         </div>

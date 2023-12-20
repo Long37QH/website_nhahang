@@ -13,9 +13,7 @@ import java.text.SimpleDateFormat;
 
 import dal.baivietDAO;
 
-/**
- * Servlet implementation class add_baivietServlet
- */
+
 public class add_baivietServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

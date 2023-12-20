@@ -1,5 +1,5 @@
 package model;
-import java.sql.Date;
+
 
 public class baiviet {
 	private int id_baiviet;

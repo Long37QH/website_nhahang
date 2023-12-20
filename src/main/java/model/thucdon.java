@@ -1,87 +1,179 @@
 package model;
 
 public class thucdon {
-	private int id_mon;
-	private String tenmon;
-	private String hinhanh;
-	private String mota;
-	private int phanloai;
-	private float gia;
-	private String trangthaiMA;
-	
-	public thucdon() {
-		
-	}
-	public thucdon(int id_mon,String tenmon,String hinhanh,String mota,int phanloai,float gia,String trangthaiMA) {
-		this.id_mon = id_mon;
-		this.tenmon = tenmon;
-		this.hinhanh = hinhanh;
-		this.mota = mota;
-		this.phanloai = phanloai;
-		this.gia = gia;
-		this.trangthaiMA = trangthaiMA;
-	}
-	
+    private int id;
+    private String tenMonAn;
+    private int loaiMonAn;
+    private String moTaTT;
+    private String moTa;
+    private int giaMonAn;
+    private int giamGia;
+    private String hinhAnh;
+    private String ngayTao;
+    private String ngayCapNhat;
+    private boolean monAnPhoBien;
+    private boolean hienThiTrangChu;
+    private boolean trangThai;
+    private int luotThich;
 
-	public int getId_mon() {
-		return id_mon;
-	}
+    // Constructors
+    public thucdon() {
+    }
+    public int getId() {
+        return id;
+    }
 
-	public void setId_mon(int id_mon) {
-		this.id_mon = id_mon;
-	}
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getTenMonAn() {
+        return tenMonAn;
+    }
 
-	public String getTenmon() {
-		return tenmon;
-	}
+    public void setTenMonAn(String tenMonAn) {
+        this.tenMonAn = tenMonAn;
+    }
 
-	public void setTenmon(String tenmon) {
-		this.tenmon = tenmon;
-	}
+    public int getLoaiMonAn() {
+        return loaiMonAn;
+    }
 
-	public String getHinhanh() {
-		return hinhanh;
-	}
+    public void setLoaiMonAn(int loaiMonAn) {
+        this.loaiMonAn = loaiMonAn;
+    }
 
-	public void setHinhanh(String hinhanh) {
-		this.hinhanh = hinhanh;
-	}
+    public String getMoTaTT() {
+        return moTaTT;
+    }
 
-	public String getMota() {
-		return mota;
-	}
+    public void setMoTaTT(String moTaTT) {
+        this.moTaTT = moTaTT;
+    }
 
-	public void setMota(String mota) {
-		this.mota = mota;
-	}
+    public String getMoTa() {
+        return moTa;
+    }
 
-	public int getPhanloai() {
-		return phanloai;
-	}
+    public void setMoTa(String moTa) {
+        this.moTa = moTa;
+    }
 
-	public void setPhanloai(int phanloai) {
-		this.phanloai = phanloai;
-	}
+    public int getGiaMonAn() {
+        return giaMonAn;
+    }
 
-	public float getGia() {
-		return gia;
-	}
+    public void setGiaMonAn(int giaMonAn) {
+        this.giaMonAn = giaMonAn;
+    }
 
-	public void setGia(float gia) {
-		this.gia = gia;
-	}
+    public int getGiamGia() {
+        return giamGia;
+    }
 
-	public String getTrangthaiMA() {
-		return trangthaiMA;
-	}
+    public void setGiamGia(int giamGia) {
+        this.giamGia = giamGia;
+    }
 
-	public void setTrangthaiMA(String trangthaiMA) {
-		this.trangthaiMA = trangthaiMA;
-	}
-	@Override
-	public String toString() {
-		return "thucdon [id_mon=" + id_mon + ", tenmon=" + tenmon + ", hinhanh=" + hinhanh + ", mota=" + mota
-				+ ", phanloai=" + phanloai + ", gia=" + gia + ", trangthaiMA=" + trangthaiMA + "]";
-	}
-	
+    public String getHinhAnh() {
+        return hinhAnh;
+    }
+
+    public void setHinhAnh(String hinhAnh) {
+        this.hinhAnh = hinhAnh;
+    }
+
+    public String getNgayTao() {
+        return ngayTao;
+    }
+
+    public void setNgayTao(String ngayTao) {
+        this.ngayTao = ngayTao;
+    }
+
+    public String getNgayCapNhat() {
+        return ngayCapNhat;
+    }
+
+    public void setNgayCapNhat(String ngayCapNhat) {
+        this.ngayCapNhat = ngayCapNhat;
+    }
+
+    public boolean isMonAnPhoBien() {
+        return monAnPhoBien;
+    }
+
+    public void setMonAnPhoBien(boolean monAnPhoBien) {
+        this.monAnPhoBien = monAnPhoBien;
+    }
+
+    public boolean isHienThiTrangChu() {
+        return hienThiTrangChu;
+    }
+
+    public void setHienThiTrangChu(boolean hienThiTrangChu) {
+        this.hienThiTrangChu = hienThiTrangChu;
+    }
+
+    public boolean isTrangThai() {
+        return trangThai;
+    }
+
+    public void setTrangThai(boolean trangThai) {
+        this.trangThai = trangThai;
+    }
+
+    public int getLuotThich() {
+        return luotThich;
+    }
+
+    public void setLuotThich(int luotThich) {
+        this.luotThich = luotThich;
+    }
+    public thucdon(String tenMonAn, int loaiMonAn, String moTaTT, String moTa, int giaMonAn, int giamGia,
+            String hinhAnh, String ngayTao, String ngayCapNhat, boolean monAnPhoBien,
+            boolean hienThiTrangChu, boolean trangThai, int luotThich) {
+			 this.tenMonAn = tenMonAn;
+			 this.loaiMonAn = loaiMonAn;
+			 this.moTaTT = moTaTT;
+			 this.moTa = moTa;
+			 this.giaMonAn = giaMonAn;
+			 this.giamGia = giamGia;
+			 this.hinhAnh = hinhAnh;
+			 this.ngayTao = ngayTao;
+			 this.ngayCapNhat = ngayCapNhat;
+			 this.monAnPhoBien = monAnPhoBien;
+			 this.hienThiTrangChu = hienThiTrangChu;
+			 this.trangThai = trangThai;
+			 this.luotThich = luotThich;
+}
+
+
+    public thucdon(int id, String tenMonAn, int loaiMonAn, String moTaTT, String moTa, int giaMonAn, int giamGia,
+                   String hinhAnh, String ngayTao, String ngayCapNhat, boolean monAnPhoBien, boolean hienThiTrangChu,
+                   boolean trangThai, int luotThich) {
+        this.id = id;
+        this.tenMonAn = tenMonAn;
+        this.loaiMonAn = loaiMonAn;
+        this.moTaTT = moTaTT;
+        this.moTa = moTa;
+        this.giaMonAn = giaMonAn;
+        this.giamGia = giamGia;
+        this.hinhAnh = hinhAnh;
+        this.ngayTao = ngayTao;
+        this.ngayCapNhat = ngayCapNhat;
+        this.monAnPhoBien = monAnPhoBien;
+        this.hienThiTrangChu = hienThiTrangChu;
+        this.trangThai = trangThai;
+        this.luotThich = luotThich;
+    }
+
+
+    @Override
+    public String toString() {
+        return "thucdon [id=" + id + ", tenMonAn=" + tenMonAn + ", loaiMonAn=" + loaiMonAn + ", moTaTT=" + moTaTT
+                + ", moTa=" + moTa + ", giaMonAn=" + giaMonAn + ", giamGia=" + giamGia + ", hinhAnh=" + hinhAnh
+                + ", ngayTao=" + ngayTao + ", ngayCapNhat=" + ngayCapNhat + ", monAnPhoBien=" + monAnPhoBien
+                + ", hienThiTrangChu=" + hienThiTrangChu + ", trangThai=" + trangThai + ", luotThich=" + luotThich
+                + "]";
+    }
 }

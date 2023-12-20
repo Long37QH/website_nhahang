@@ -1,16 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri = "http://java.sun.com/jsp/jstl/core" %>
  <%@include file="Header.jsp" %>   
         <!-- Page Header Start -->
         <div class="page-header mb-0">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>About Us</h2>
+                        <h2>Giới Thiệu Về Chúng Tôi</h2>
                     </div>
                     <div class="col-12">
-                        <a href="">Home</a>
-                        <a href="">About Us</a>
+                        <a href="">Trang Chủ</a>
+                        <a href="">Giơi Thiệu</a>
                     </div>
                 </div>
             </div>
@@ -24,32 +25,32 @@
                 <div class="row align-items-center">
                     <div class="col-md-4">
                         <div class="food-item">
-                            <i class="flaticon-burger"></i>
-                            <h2>Burgers</h2>
+                            <i class="fa-solid fa-bowl-rice"></i>
+                            <h2>Món ăn chính</h2>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputa. Aliquam metus tortor auctor quis sem. 
+                                Nhà hàng phục vụ phong phú đa dạng nhiều loại món ăn từ đồ ăn vùng núi đến hải sản với những món ăn đậm vị xứ Nghệ.
                             </p>
-                            <a href="">View Menu</a>
+                            <a href="thucdonServlet">Xem Thực Đơn</a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="food-item">
-                            <i class="flaticon-snack"></i>
-                            <h2>Snacks</h2>
+                            <i class="fa-solid fa-plate-wheat"></i>
+                            <h2>Điểm tâm</h2>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputa. Aliquam metus tortor auctor quis sem. 
+                                Nhà hàng cung cấp phục vụ nhiều món điểm tâm nổi tiếng mọi vùng miền, đầy bổ dưỡng rất tối cho sức khoẻ.
                             </p>
-                            <a href="">View Menu</a>
+                            <a href="thucdonServlet">Xem Thực Đơn</a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="food-item">
-                            <i class="flaticon-cocktail"></i>
-                            <h2>Beverages</h2>
+                            <i class="fa-solid fa-martini-glass-citrus"></i>
+                            <h2>Đồ uống</h2>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputa. Aliquam metus tortor auctor quis sem. 
+                                Qua nhưng phương châm cốt lõi, chúng tôi mong muốn hướng đến phục vụ tốt nhất cho lợi ích của tất cả đối tác và người tiêu dùng. 
                             </p>
-                            <a href="">View Menu</a>
+                            <a href="thucdonServlet">Xem Thực Đơn</a>
                         </div>
                     </div>
                 </div>
@@ -60,11 +61,13 @@
 
         <!-- About Start -->
         <div class="about">
+        <c:forEach items = "${bvgt}" var = "gtbv" >
             <div class="container">
+            
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="img/about.jpg" alt="Image">
+                            <img src="${gtbv.hinhanh}" alt="Image">
                             <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
                                 <span></span>
                             </button>
@@ -72,23 +75,22 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="about-content">
+                        
                             <div class="section-header">
-                                <p>About Us</p>
-                                <h2>Cooking Since 1990</h2>
+                                <p>Giới thiệu về chúng tôi</p>
+                                <h2>${gtbv.tenbai}</h2>
                             </div>
                             <div class="about-text">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                    ${gtbv.tomtatbv}
                                 </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-                                </p>
-                                <a class="btn custom-btn" href="">Book A Table</a>
+                                <a class="btn custom-btn" href="baiviet_detialServlet?id=${gtbv.id_baiviet}">Xem Thêm</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            </c:forEach>
         </div>
         <!-- About End -->
         

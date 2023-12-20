@@ -1,6 +1,5 @@
 package dal;
 
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -39,9 +38,40 @@ public class baivietDAO extends DBConnect{
 		}
 		return listbv;
 	}
+	// list danh sách admin
 	public List<baiviet> getBaiVietAll2(){
 		List<baiviet> listbv = new ArrayList<>();
 		String sql = "SELECT * FROM tbl_baiviet ORDER BY id_baiviet DESC";
+		try {
+			PreparedStatement ps = connection.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()) {
+				int id_baiviet;
+				String tenbai,danhmucbv,tomtatbv,noidung,hinhanh,tacgia,trangthaibv,ngayviet;
+				
+				
+				id_baiviet = rs.getInt("id_baiviet");
+				tenbai = rs.getString("tenbai");
+				danhmucbv = rs.getString("danhmucbv");
+				tomtatbv = rs.getString("tomtatbv");
+				noidung = rs.getString("noidung");
+				hinhanh = rs.getString("hinhanh");
+				tacgia = rs.getString("tacgia");
+				ngayviet = rs.getString("ngayviet");
+				trangthaibv = rs.getString("trangthaibv");
+				
+				baiviet b = new baiviet(id_baiviet,tenbai,danhmucbv,tomtatbv,noidung,hinhanh,tacgia,ngayviet,trangthaibv);
+				listbv.add(b);
+			}
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return listbv;
+	}
+	// baiv viết gioi thiêu
+	public List<baiviet> getBaiVietGT(){
+		List<baiviet> listbv = new ArrayList<>();
+		String sql = "SELECT * FROM tbl_baiviet where trangthaibv = 'Hiển thị' AND danhmucbv = 'Giới Thiệu'";
 		try {
 			PreparedStatement ps = connection.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
@@ -79,7 +109,7 @@ public class baivietDAO extends DBConnect{
 				String tenbai,danhmucbv,tomtatbv,noidung,hinhanh,tacgia,trangthaibv,ngayviet;
 				
 				
-				tenbai = rs.getString("tenbai");
+				tenbai = rs.getString(2);
 				danhmucbv = rs.getString("danhmucbv");
 				tomtatbv = rs.getString("tomtatbv");
 				noidung = rs.getString("noidung");

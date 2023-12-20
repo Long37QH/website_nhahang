@@ -40,10 +40,10 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.jsp" class="nav-item nav-link active">Trang chủ</a>
-                        <a href="about.jsp" class="nav-item nav-link">Giới thiệu</a>
-                        <a href="team.jsp" class="nav-item nav-link">Đầu bếp</a>
-                        <a href="menu.jsp" class="nav-item nav-link">Thực đơn</a>
+                        <a href="homeServlet" class="nav-item nav-link active">Trang chủ</a>
+                        <a href="gioithieuServlet" class="nav-item nav-link">Giới thiệu</a>
+                        <a href="nhanvienServlet" class="nav-item nav-link">Đầu bếp</a>
+                        <a href="thucdonServlet" class="nav-item nav-link">Thực đơn</a>
                         <a href="booking.jsp" class="nav-item nav-link">Đặt bàn</a>
                         <a href="baivietServlet" class="nav-item nav-link">Bài viết</a>
                         <!--  <div class="nav-item dropdown">
@@ -54,7 +54,7 @@
                             </div>
                         </div>-->
                         <a href="contact.jsp" class="nav-item nav-link">Liên hệ</a>
-                        <a href="#" class="nav-item nav-link"><i class="fa-solid fa-circle-user fa-2xl"></i></a>
+                        <a href="admin" class="nav-item nav-link"><i class="fa-solid fa-circle-user fa-2xl"></i></a>
                     </div>
                 </div>
             </div>

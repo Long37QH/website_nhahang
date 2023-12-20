@@ -264,10 +264,10 @@
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="../ds_baivietServlet"
                                 aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
                                     class="hide-menu">Quản lý bài viết</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="#"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="ds_slideServlet"
                                 aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
                                     class="hide-menu">Quản lý slide</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link" href="ds_slideServlet"
+                        <li class="sidebar-item"> <a class="sidebar-link" href="../ds_thucdonServlet"
                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
                                     class="hide-menu"> Quản lý thực đơn
                                 </span></a>
@@ -278,7 +278,7 @@
                                 aria-expanded="false"><i data-feather="file-text" class="feather-icon"></i><span
                                     class="hide-menu">Quản lý nhân viên </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                                <li class="sidebar-item"><a href="../ds_nhanvienServlet" class="sidebar-link"><span
                                             class="hide-menu"> Danh sách nhân viên
                                         </span></a>
                                 </li>
@@ -328,7 +328,7 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-7 align-self-center">
-                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Thêm bài viết mới</h4>
+                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Thêm nhân viên mới</h4>
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb m-0 p-0">
@@ -361,41 +361,26 @@
 	                    <div class="col-12">
 	                        <div class="card">
 	                            <div class="card-body">
-	                                <h4 class="card-title">Nhập thông tin bài viết</h4>
-	                                <form action="../add_baivietServlet" method="post" >
+	                                <h4 class="card-title">Nhập thông tin nhân viên</h4>
+	                                <form action="../add_nhanvienServlet" method="post" >
 	                                    <div class="form-body">
-	                                        <label for="tenbai" >Tiêu đề bài viết </label>
+	                                        <label for="tenNV" >Tên nhân viên </label>
 	                                        <div class="row">
 	                                            <div class="col-md-6">
 	                                                <div class="form-group">
-	                                                    <input type="text" name="tenbai" id="tenbai" class="form-control" placeholder="">
+	                                                    <input type="text" name="tenNV" id="tenNV" class="form-control" placeholder="">
 	                                                </div>
 	                                            </div>
 	                                        </div>
-	                                        <label for="danhmucbv" >Danh mục </label>
+	                                        <label for="chuVu" >Chức vụ </label>
 	                                        <div class="row">
 	                                            <div class="col-md-3">
 	                                                <div class="form-group">
-	                                                    <input type="text" name="danhmucbv" id="danhmucbv"  class="form-control" placeholder="Ẩm thực">
+	                                                    <input type="text" name="chuVu" id="chuVu"  class="form-control" placeholder="">
 	                                                </div>
 	                                            </div>
 	                                        </div>
-	                                        <label for="tomtatbv" >Tóm tắt </label>
-	                                        <div class="row">
-	                                            <div class="col-md-9">
-	                                                <div class="form-group">
-                                        				<textarea class="form-control" name="tomtatbv" id="tomtatbv"  rows="3" placeholder="Nội dung tóm tắt..."></textarea>
-                                    				</div>
-	                                            </div>
-	                                        </div>
-	                                        <label for="noidung" >Nội dung </label>
-	                                        <div class="row">
-	                                            <div class="col-md-9">
-	                                                <div class="form-group">
-                                        				<textarea class="form-control" name="noidung" id="noidung" rows="5" placeholder="Nội dung..."></textarea>
-                                    				</div>
-	                                            </div>
-	                                        </div>
+	   
 	                                        <label>Hình ảnh </label>
 	                                        <div class="row">
 	                                            <div class="input-group mb-3 col-md-6">
@@ -408,32 +393,39 @@
                                         		</div>
 	                                            </div>
 	                                        </div>
-	                                        <label for="tacgia" >Tác giả </label>
+	                                       <label for="sdt" >Số điện thoại</label>
 	                                        <div class="row">
 	                                            <div class="col-md-6">
 	                                                <div class="form-group">
-	                                                    <input type="text" name="tacgia" id="tacgia" class="form-control" placeholder="">
+	                                                    <input type="text" name="sdt" id="sdt" class="form-control" placeholder="">
 	                                                </div>
 	                                            </div>
 	                                        </div>
-	                                        <label>Thời gian viêt </label>
+	                                         <label for="email" >Gmail</label>
 	                                        <div class="row">
 	                                            <div class="col-md-6">
 	                                                <div class="form-group">
-                                        				<input type="date" class="form-control" name="ngayviet" value="">
-                                    				</div>
+	                                                    <input type="text" name="email" id="email" class="form-control" placeholder="">
+	                                                </div>
 	                                            </div>
 	                                        </div>
-	                                         <label>Trạng thái bài viết </label>
+	                                        <label for="diachi" >Địa chỉ</label>
 	                                        <div class="row">
-	                                            <div class="col-md-9">
-	                                                <select class="custom-select mr-sm-2 " name="trangthaibv" id="trangthaibv">
-			                                            <option value="Hiển thị">Hiển thị</option>
-			                                            <option value="Ẩn">Ẩn</option>
-			                                        </select>
+	                                            <div class="col-md-6">
+	                                                <div class="form-group">
+	                                                    <input type="text" name="diachi" id="diachi" class="form-control" placeholder="">
+	                                                </div>
 	                                            </div>
 	                                        </div>
-	                                    </div>
+	                         
+	                                        <label for="gioitinh" >Giới tính</label>
+	                                        <div class="row">
+	                                            <div class="col-md-6">
+	                                                <div class="form-group">
+	                                                    <input type="text" name="gioitinh" id="gioitinh" class="form-control" placeholder="">
+	                                                </div>
+	                                            </div>
+	                                        </div>
 	                                    <div class="form-actions">
 	                                        <div class="text-left mt-3 ">
 	                                            <button type="submit" class="btn btn-info">Lưu lại</button>
