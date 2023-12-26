@@ -16,6 +16,7 @@
     <title>Đăng nhập trang quản trị</title>
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -44,36 +45,43 @@
         <div class="auth-wrapper d-flex no-block justify-content-center align-items-center position-relative"
             style="background:url(assets/images/big/auth-bg.jpg) no-repeat center center;">
             <div class="auth-box row">
-                <div class="col-lg-7 col-md-5 modal-bg-img" style="background-image: url(assets/images/big/3.jpg);">
+                <div class="col-lg-7 col-md-5 modal-bg-img" style="background-image: url(assets/images/big/feature-3.jpg);">
                 </div>
                 <div class="col-lg-5 col-md-7 bg-white">
                     <div class="p-3">
+                        
+                        <h2 class="mt-3 text-center">Đăng nhập</h2>
+                        <p class="text-center">Trang quản trị</p>
                         <div class="text-center">
-                            <img src="assets/images/big/icon.png" alt="wrapkit">
+                            <img src="assets/images/big/icon3.png" style="width: 150px;" alt="wrapkit">
                         </div>
-                        <h2 class="mt-3 text-center">Sign In</h2>
-                        <p class="text-center">Enter your email address and password to access admin panel.</p>
-                        <form class="mt-4">
+                        <form action="../loginServlet" method="post" class="mt-4">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label class="text-dark" for="uname">Username</label>
-                                        <input class="form-control" id="uname" type="text"
+                                        <label class="text-dark" for="tentk"><i class="fa-solid fa-user"></i> Tài khoản</label>
+                                        <input class="form-control" id="tentk" name="tentk" type="text"
                                             placeholder="enter your username">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <label class="text-dark" for="pwd">Password</label>
-                                        <input class="form-control" id="pwd" type="password"
+                                        <label class="text-dark" for="pass"><i class="fa-solid fa-key"></i> Mật khẩu</label>
+                                        <input class="form-control" id="pass" name="pass" type="password"
                                             placeholder="enter your password">
                                     </div>
                                 </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <div class="col-lg-3 col-lg-offset-2">
+											<p style="color: red;">${requestScope.error}</p>
+										</div>
+                                    </div>
+                                </div>
                                 <div class="col-lg-12 text-center">
-                                    <button type="submit" class="btn btn-block btn-dark">Sign In</button>
+                                    <button type="submit" class="btn btn-block btn-dark">Đăng nhập</button>
                                 </div>
                                 <div class="col-lg-12 text-center mt-5">
-                                    Don't have an account? <a href="#" class="text-danger">Sign Up</a>
                                 </div>
                             </div>
                         </form>

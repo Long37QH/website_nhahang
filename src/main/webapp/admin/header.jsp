@@ -52,19 +52,12 @@
                     <div class="navbar-brand">
                         <!-- Logo icon -->
                         <a href="index.html">
-                            <b class="logo-icon">
-                                <!-- Dark Logo icon -->
-                                <img src="admin/assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
-                                <!-- Light Logo icon -->
-                                <img src="admin/assets/images/logo-icon.png" alt="homepage" class="light-logo" />
-                            </b>
+                            
                             <!--End Logo icon -->
                             <!-- Logo text -->
                             <span class="logo-text">
                                 <!-- dark Logo text -->
-                                <img src="admin/assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                                <!-- Light Logo text -->
-                                <img src="admin/assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                                <img src="admin/assets/images/big/icon3.png" style="width:195px;" alt="homepage" class="dark-logo" />           
                             </span>
                         </a>
                     </div>
@@ -223,10 +216,10 @@
                                         class="svg-icon"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
-                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="user"
+                                <a class="dropdown-item" href="ds_taikhoanServlet"><i data-feather="user"
                                         class="svg-icon mr-2 ml-1"></i>
                                     Tài khoản</a>
-                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="power"
+                                <a class="dropdown-item" href="logoutServlet"><i data-feather="power"
                                         class="svg-icon mr-2 ml-1"></i>
                                     Đăng xuất</a>
                                 <div class="dropdown-divider"></div>
@@ -256,10 +249,7 @@
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Quản lý trang</span></li>
 
-                        <li class="sidebar-item"> <a class="sidebar-link" href="#" aria-expanded="false"><i
-                                    data-feather="tag" class="feather-icon"></i><span class="hide-menu"> Quản lý danh mục
-                                </span></a>
-                        </li>
+                        
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="ds_baivietServlet" aria-expanded="false"><i
                                     data-feather="message-square" class="feather-icon"></i><span class="hide-menu">Quản lý bài viết</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="ds_slideServlet" aria-expanded="false"><i
@@ -301,9 +291,9 @@
 
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Tài khoản</span></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="#" aria-expanded="false"><i
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="ds_taikhoanServlet" aria-expanded="false"><i
                                     data-feather="edit-3" class="feather-icon"></i><span class="hide-menu">Quản lý tài khoản</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="authentication-login1.html"
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="logoutServlet"
                                 aria-expanded="false"><i data-feather="log-out" class="feather-icon"></i><span
                                     class="hide-menu">Đăng xuất</span></a></li>
                     </ul>

@@ -9,7 +9,7 @@
                         <h2>Liên hệ chúng tôi</h2>
                     </div>
                     <div class="col-12">
-                        <a href="">Trang chủ</a>
+                        <a href="homeServlet">Trang chủ</a>
                         <a href="">Liên hệ</a>
                     </div>
                 </div>

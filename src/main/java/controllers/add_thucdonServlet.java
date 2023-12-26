@@ -11,9 +11,7 @@ import java.io.IOException;
 
 import dal.thucdonDAO;
 
-/**
- * Servlet implementation class add_thucdonServlet
- */
+
 public class add_thucdonServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -29,8 +27,7 @@ public class add_thucdonServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.sendRedirect("ds_thucdonServlet");
 	}
 
 	/**

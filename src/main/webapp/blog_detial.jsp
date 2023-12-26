@@ -56,72 +56,42 @@
 						
                         <div class="single-comment">
                         
-                            <h2>3 Bình luận</h2>
+                            <h2>5 Bình luận</h2>
                             <ul class="comment-list">
+                            <c:forEach items = "${list_bl}" var = "listbinhluan">
                                 <li class="comment-item">
                                     <div class="comment-body">
                                         <div class="comment-img">
-                                            <img src="img/user.jpg" />
+                                            <img src="img/anhbl.jpg" />
                                         </div>
                                         <div class="comment-text">
-                                            <h3><a href="">Đinh Viết Long</a></h3>
-                                            <span>01 Jan 2045 at 12:00pm</span>
+                                            <h3><a href="">${listbinhluan.tennbl}</a></h3>
+                                            <span>${listbinhluan.tg_binhluan}</span>
                                             <p>
-                                                Trông món ăn của bạn rất tuyệt vời!
+                                                ${listbinhluan.noidungbl}
                                             </p>
-                                            <a class="btn" href="">Phản hồi</a>
+                                            <a class="btn" href="#phanhoi">Phản hồi</a>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="comment-item">
-                                    <div class="comment-body">
-                                        <div class="comment-img">
-                                            <img src="img/user.jpg" />
-                                        </div>
-                                        <div class="comment-text">
-                                            <h3><a href="">Đoàn Ngọc Tuấn</a></h3>
-                                            <p><span>01 Jan 2045 at 12:00pm</span></p>
-                                            <p>
-                                                Bài viết rất hữu ích, Thật tuyệt vời!
-                                            </p>
-                                            <a class="btn" href="">Phản hồi</a>
-                                        </div>
-                                    </div>
-                                    <ul class="comment-child">
-                                        <li class="comment-item">
-                                            <div class="comment-body">
-                                                <div class="comment-img">
-                                                    <img src="img/user.jpg" />
-                                                </div>
-                                                <div class="comment-text">
-                                                    <h3><a href="">Vi Văn Thoả</a></h3>
-                                                    <p><span>01 Jan 2045 at 12:00pm</span></p>
-                                                    <p>
-                                                        Tôi thấy nhà hàng phục vụ rất tận tình, mọi người nên lữa chọn nhà hàng Food247.
-                                                    </p>
-                                                    <a class="btn" href="">Phản hồi</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
+                                </c:forEach>
                             </ul>
                         </div>
-                        <div class="comment-form">
+                        <div class="comment-form" id ="phanhoi">
                             <h2>Bình luận bài viết</h2>
-                            <form>
+                            <form  action="add_binhluanServlet" method="post" >
                                 <div class="form-group">
-                                    <label for="name">Họ và tên *</label>
-                                    <input type="text" class="form-control" id="name">
+                                    <label for="tennbl">Họ và tên *</label>
+                                    <input type="text" class="form-control" id="tennbl" name="tennbl" >
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email *</label>
-                                    <input type="email" class="form-control" id="email">
+                                    <input type="email" class="form-control" id="email" name="email" >
                                 </div>
                                
                                 <div class="form-group">
-                                    <label for="message">Bình buận *</label>
-                                    <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
+                                    <label for="noidungbl">Bình buận *</label>
+                                    <textarea id="noidungbl" name="noidungbl" cols="30" rows="5" class="form-control"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <input type="submit" value="Gửi bình luận" class="btn custom-btn">

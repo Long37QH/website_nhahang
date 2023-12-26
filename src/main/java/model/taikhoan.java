@@ -15,6 +15,11 @@ public class taikhoan {
 		this.tentk = tentk;
 		this.pass = pass;	
 	}
+	public taikhoan(int id_nhanvien,String tentk,String pass) {
+		this.id_nhanvien = id_nhanvien;
+		this.tentk = tentk;
+		this.pass = pass;	
+	}
 	
 	public int getId_tk() {
 		return id_tk;

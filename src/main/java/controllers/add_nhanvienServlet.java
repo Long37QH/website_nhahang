@@ -29,7 +29,7 @@ public class add_nhanvienServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
+		response.sendRedirect("ds_nhanvienServlet");
 	}
 
 	/**

@@ -10,7 +10,7 @@
                         <h2>Giới Thiệu Về Chúng Tôi</h2>
                     </div>
                     <div class="col-12">
-                        <a href="">Trang Chủ</a>
+                        <a href="homeServlet">Trang Chủ</a>
                         <a href="">Giơi Thiệu</a>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                     <div class="col-lg-6">
                         <div class="about-img">
                             <img src="${gtbv.hinhanh}" alt="Image">
-                            <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                            <button type="button" class="btn-play" data-toggle="modal" data-src="img/gtnhahang.mp4" data-target="#videoModal">
                                 <span></span>
                             </button>
                         </div>

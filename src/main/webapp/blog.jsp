@@ -10,7 +10,7 @@
                         <h2>Bài viết nổi bật</h2>
                     </div>
                     <div class="col-12">
-                        <a href="">Trang chủ</a>
+                        <a href="homeServlet">Trang chủ</a>
                         <a href="">Bài viết</a>
                     </div>
                 </div>

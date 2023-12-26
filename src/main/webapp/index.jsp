@@ -127,35 +127,36 @@
 
         <!-- About Start -->
         <div class="about">
+            <c:forEach items = "${bvgt}" var = "gtbv" >
             <div class="container">
+            
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="img/about.jpg" alt="Image">
-                            <button type="button" class="btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                            <img src="${gtbv.hinhanh}" alt="Image">
+                            <button type="button" class="btn-play" data-toggle="modal" data-src="img/gtnhahang.mp4" data-target="#videoModal">
                                 <span></span>
                             </button>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="about-content">
+                        
                             <div class="section-header">
-                                <p>About Us</p>
-                                <h2>Cooking Since 1990</h2>
+                                <p>Giới thiệu về chúng tôi</p>
+                                <h2>${gtbv.tenbai}</h2>
                             </div>
                             <div class="about-text">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                    ${gtbv.tomtatbv}
                                 </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
-                                </p>
-                                <a class="btn custom-btn" href="">Book A Table</a>
+                                <a class="btn custom-btn" href="baiviet_detialServlet?id=${gtbv.id_baiviet}">Xem Thêm</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            </c:forEach>
         </div>
         <!-- About End -->
         
@@ -185,8 +186,8 @@
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="section-header">
-                            <p>Why Choose Us</p>
-                            <h2>Our Key Features</h2>
+                            <p>Tại sao chọn cúng tôi</p>
+                            <h2>Điểm nhấn nổi bật</h2>
                         </div>
                         <div class="feature-text">
                             <div class="feature-img">
@@ -206,9 +207,10 @@
                                 </div>
                             </div>
                             <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Phasel nec preti mi. Curabit facilis ornare velit non vulputa. Aliquam metus tortor, auctor id gravida condime, viverra quis sem. Curabit non nisl nec nisi sceleri maximus 
+                                Nhà hàng nổi tiếng Food247 – Ngày nay với xu thế phát triển hội nhập, toàn cầu hóa, đời sống của con người trở nên phát triển nhanh chóng. 
+                                Chính vì lẽ đó, tiêu chí ăn no mặc ấm đã chuyển sang một giai đoạn mới cao hơn đó là ăn ngon, mặc đẹp.
                             </p>
-                            <a class="btn custom-btn" href="">Book A Table</a>
+                            <a class="btn custom-btn" href="">Đặt bàn ngay</a>
                         </div>
                     </div>
                     <div class="col-lg-7">
@@ -216,18 +218,18 @@
                             <div class="col-sm-6">
                                 <div class="feature-item">
                                     <i class="flaticon-cooking"></i>
-                                    <h3>World’s best Chef</h3>
+                                    <h3>Tập trung nhiều đầu bếp giỏi</h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor
+                                        Nhà hàng Food247 tập trung nhiều đầu bếp trên khắp vùng miền Việt Nam sẵn sàng đáp ứng được quý khách.
                                     </p>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="feature-item">
                                     <i class="flaticon-vegetable"></i>
-                                    <h3>Natural ingredients</h3>
+                                    <h3>Thực phẩm 100% tự nhiên</h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor
+                                        Tất cacr các loại thực phẩm được sử dụng tại nhà hàng Food247 đều được cấp chứng nhận sạch tự nhiên.
                                     </p>
                                 </div>
                             </div>
@@ -236,18 +238,18 @@
                             <div class="col-sm-6">
                                 <div class="feature-item">
                                     <i class="flaticon-medal"></i>
-                                    <h3>Best quality products</h3>
+                                    <h3>Sản phẩm luôn đảm bảo chất lượng tốt nhất</h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor
+                                        Vơi đội ngũ nhân viên chuyên nghiệp nhà hàng Food247 cam kết đưa lại cho quý khách những giây phut trải nghiệm tuyệt vời.
                                     </p>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="feature-item">
                                     <i class="flaticon-meat"></i>
-                                    <h3>Fresh vegetables & Meet</h3>
+                                    <h3>Thực phẩm tươi ngon rõ ràng nguông gốc</h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor
+                                        Mọi loại thực phẩm trước khi được nhập về nhà hàng Food247 đều được kiểm tra một cách kĩ lưỡng có nguồn gốc rõ ràng.
                                     </p>
                                 </div>
                             </div>
@@ -256,18 +258,18 @@
                             <div class="col-sm-6">
                                 <div class="feature-item">
                                     <i class="flaticon-courier"></i>
-                                    <h3>Fastest door delivery</h3>
+                                    <h3>Nhận đặt bàn đặt tiệc mọi lúc</h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor
+                                        Nhà hàng Food247 luôn sãn sàng nhận các quý khách đặt bàn hay tổ chức tiệc tùng.
                                     </p>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="feature-item">
                                     <i class="flaticon-fruits-and-vegetables"></i>
-                                    <h3>Ground beef & Low fat</h3>
+                                    <h3>Nhân viên phục vụ nhiệt tình</h3>
                                     <p>
-                                        Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput metus tortor
+                                        Với đội ngũ nhân viên luôn được tập huấn ngiệp vụ thường xuyên đảm vảo đêm lại trải nghiệm tôt nhất.
                                     </p>
                                 </div>
                             </div>
@@ -285,32 +287,32 @@
                 <div class="row align-items-center">
                     <div class="col-md-4">
                         <div class="food-item">
-                            <i class="flaticon-burger"></i>
-                            <h2>Burgers</h2>
+                            <i class="fa-solid fa-bowl-rice"></i>
+                            <h2>Món ăn chính</h2>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputa. Aliquam metus tortor auctor quis sem. 
+                                Nhà hàng phục vụ phong phú đa dạng nhiều loại món ăn từ đồ ăn vùng núi đến hải sản với những món ăn đậm vị xứ Nghệ.
                             </p>
-                            <a href="">View Menu</a>
+                            <a href="thucdonServlet">Xem Thực Đơn</a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="food-item">
-                            <i class="flaticon-snack"></i>
-                            <h2>Snacks</h2>
+                            <i class="fa-solid fa-plate-wheat"></i>
+                            <h2>Điểm tâm</h2>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputa. Aliquam metus tortor auctor quis sem. 
+                                Nhà hàng cung cấp phục vụ nhiều món điểm tâm nổi tiếng mọi vùng miền, đầy bổ dưỡng rất tối cho sức khoẻ.
                             </p>
-                            <a href="">View Menu</a>
+                            <a href="thucdonServlet">Xem Thực Đơn</a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="food-item">
-                            <i class="flaticon-cocktail"></i>
-                            <h2>Beverages</h2>
+                            <i class="fa-solid fa-martini-glass-citrus"></i>
+                            <h2>Đồ uống</h2>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit facilis ornare velit non vulputa. Aliquam metus tortor auctor quis sem. 
+                                Qua nhưng phương châm cốt lõi, chúng tôi mong muốn hướng đến phục vụ tốt nhất cho lợi ích của tất cả đối tác và người tiêu dùng. 
                             </p>
-                            <a href="">View Menu</a>
+                            <a href="thucdonServlet">Xem Thực Đơn</a>
                         </div>
                     </div>
                 </div>
@@ -322,179 +324,117 @@
         <!-- Menu Start -->
         <div class="menu">
             <div class="container">
-                <div class="section-header text-center">
-                    <p>Food Menu</p>
-                    <h2>Delicious Food Menu</h2>
-                </div>
-                <div class="menu-tab">
-                    <ul class="nav nav-pills justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="pill" href="#burgers">Burgers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#snacks">Snacks</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="pill" href="#beverages">Beverages</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="burgers" class="container tab-pane active">
-                            <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-burger.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Mini cheese Burger</span> <strong>$9.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-burger.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Double size burger</span> <strong>$11.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-burger.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Bacon, EGG and Cheese</span> <strong>$13.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-burger.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Pulled porx Burger</span> <strong>$18.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-burger.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Fried chicken Burger</span> <strong>$22.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 d-none d-lg-block">
-                                    <img src="img/menu-burger-img.jpg" alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                        <div id="snacks" class="container tab-pane fade">
-                            <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-snack.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Corn Tikki - Spicy fried Aloo</span> <strong>$15.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-snack.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Bread besan Toast</span> <strong>$35.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-snack.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Healthy soya nugget snacks</span> <strong>$20.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-snack.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Tandoori Soya Chunks</span> <strong>$30.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 d-none d-lg-block">
-                                    <img src="img/menu-snack-img.jpg" alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                        <div id="beverages" class="container tab-pane fade">
-                            <div class="row">
-                                <div class="col-lg-7 col-md-12">
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-beverage.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Single Cup Brew</span> <strong>$7.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-beverage.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Caffe Americano</span> <strong>$9.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-beverage.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Caramel Macchiato</span> <strong>$15.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-beverage.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Standard black coffee</span> <strong>$8.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                    <div class="menu-item">
-                                        <div class="menu-img">
-                                            <img src="img/menu-beverage.jpg" alt="Image">
-                                        </div>
-                                        <div class="menu-text">
-                                            <h3><span>Standard black coffee</span> <strong>$12.00</strong></h3>
-                                            <p>Lorem ipsum dolor sit amet elit. Phasel nec preti facil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 d-none d-lg-block">
-                                    <img src="img/menu-beverage-img.jpg" alt="Image">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+             <div class="section-header text-center">
+                 <p>Thực đơn chính</p>
+                 <h2>Món ăn được săn đón</h2>
+             </div>
+             <div class="menu-tab">
+                 <ul class="nav nav-pills justify-content-center">
+                 	<c:forEach var="item" items="${td}">
+    					<c:if test="${item.loaiMonAn == 0}">
+        					<c:if test="${item.id==1}">
+        						<li class="nav-item">
+                        			<a class="nav-link active" data-toggle="pill" href="#burgers">${item.tenMonAn}</a>
+                     			</li>
+        					</c:if>
+        					<c:if test="${item.id==2}">
+        						<li class="nav-item">
+                        			<a class="nav-link" data-toggle="pill" href="#snacks">${item.tenMonAn}</a>
+                     			</li>
+        					</c:if>
+        					<c:if test="${item.id==3}">
+        						<li class="nav-item">
+                        			<a class="nav-link" data-toggle="pill" href="#beverages">${item.tenMonAn}</a>
+                     			</li>
+        					</c:if>
+   
+    					</c:if>
+					</c:forEach>
+
+                 </ul>
+                 <div class="tab-content">
+                     <div id="burgers" class="container tab-pane active">
+                         <div class="row">
+                             <div class="col-lg-7 col-md-12">
+                             	<c:forEach var="item" items="${td}">
+                             		<c:if test="${item.loaiMonAn == 1}">
+                             			<div class="menu-item">
+                                     <div class="menu-img">
+                                         <img src="${item.hinhAnh}" alt="Image">
+                                     </div>
+                                     <div class="menu-text">
+                                         <h3><span>${item.tenMonAn}</span> <strong>${item.giaMonAn}Vnđ</strong></h3>
+                                         <p>${item.moTaTT}</p>
+                                     </div>
+                                 </div>
+                             		</c:if>
+                             	</c:forEach>
+                             </div>  
+                             <c:forEach var="item" items="${td}">
+                             	<c:if test="${item.id==1}">
+                             		<div class="col-lg-5 d-none d-lg-block">
+                                 		<img src="${item.hinhAnh}" alt="Image">
+                             		</div>
+                             	</c:if>
+                             </c:forEach>
+                             
+                         </div>
+                     </div>
+                     <div id="snacks" class="container tab-pane fade">
+                         <div class="row">
+                             <div class="col-lg-7 col-md-12">
+                                 <c:forEach var="item" items="${td}">
+                             		<c:if test="${item.loaiMonAn == 2}">
+                             			<div class="menu-item">
+                                     <div class="menu-img">
+                                         <img src="${item.hinhAnh}" alt="Image">
+                                     </div>
+                                     <div class="menu-text">
+                                         <h3><span>${item.tenMonAn}</span> <strong>${item.giaMonAn}Vnđ</strong></h3>
+                                         <p>${item.moTaTT}</p>
+                                     </div>
+                                 </div>
+                             		</c:if>
+                             	</c:forEach>
+                             </div>
+                            <c:forEach var="item" items="${td}">
+                             	<c:if test="${item.id==2}">
+                             		<div class="col-lg-5 d-none d-lg-block">
+                                 		<img src="${item.hinhAnh}" alt="Image">
+                             		</div>
+                             	</c:if>
+                             </c:forEach>
+                         </div>
+                     </div>
+                     <div id="beverages" class="container tab-pane fade">
+                         <div class="row">
+                             <div class="col-lg-7 col-md-12">
+                                 <c:forEach var="item" items="${td}">
+                             		<c:if test="${item.loaiMonAn == 3}">
+                             			<div class="menu-item">
+                                     <div class="menu-img">
+                                         <img src="${item.hinhAnh}" alt="Image">
+                                     </div>
+                                     <div class="menu-text">
+                                         <h3><span>${item.tenMonAn}</span> <strong>${item.giaMonAn}Vnđ</strong></h3>
+                                         <p>${item.moTaTT}</p>
+                                     </div>
+                                 </div>
+                             		</c:if>
+                             	</c:forEach>
+                             </div>
+                             <c:forEach var="item" items="${td}">
+                             	<c:if test="${item.id==3}">
+                             		<div class="col-lg-5 d-none d-lg-block">
+                                 		<img src="${item.hinhAnh}" alt="Image">
+                             		</div>
+                             	</c:if>
+                             </c:forEach>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
         </div>
         <!-- Menu End -->
         
@@ -502,81 +442,34 @@
         <!-- Team Start -->
         <div class="team">
             <div class="container">
-                <div class="section-header text-center">
-                    <p>Our Team</p>
-                    <h2>Our Master Chef</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-1.jpg" alt="Image">
-                                <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-text">
-                                <h2>Adam Phillips</h2>
-                                <p>CEO, Co Founder</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-2.jpg" alt="Image">
-                                <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-text">
-                                <h2>Dylan Adams</h2>
-                                <p>Master Chef</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-3.jpg" alt="Image">
-                                <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-text">
-                                <h2>Jhon Doe</h2>
-                                <p>Master Chef</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-4.jpg" alt="Image">
-                                <div class="team-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="team-text">
-                                <h2>Josh Dunn</h2>
-                                <p>Master Chef</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+             <div class="section-header text-center">
+                 <p>Đội của chúng tôi</p>
+                 <h2>Đội ngũ hàng đầu Việt Nam</h2>
+             </div>
+             <div class="row">
+              	<c:forEach var="listnv" items = "${data}" >
+                 <div class="col-lg-3 col-md-6">
+                     <div class="team-item">
+                         <div class="team-img">
+                             <img src="img/${listnv.hinhanh}" alt="Image">
+                             <div class="team-social">
+                                 <a href=""><i class="fab fa-twitter"></i></a>
+                                 <a href=""><i class="fab fa-facebook-f"></i></a>
+                                 <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                 <a href=""><i class="fab fa-instagram"></i></a>
+                             </div>
+                         </div>
+                         <div class="team-text">
+                             <h2>${listnv.tenNV}</h2>
+                             <p>${listnv.chuVu}</p>
+                         </div>
+                     </div>
+                 </div>
+                 </c:forEach>
+                
+                    
+                 </div>
+             </div>
         </div>
         <!-- Team End -->
         
@@ -585,46 +478,18 @@
         <div class="testimonial">
             <div class="container">
                 <div class="owl-carousel testimonials-carousel">
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-1.jpg" alt="Image">
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput
-                        </p>
-                        <h2>Client Name</h2>
-                        <h3>Profession</h3>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-2.jpg" alt="Image">
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput
-                        </p>
-                        <h2>Client Name</h2>
-                        <h3>Profession</h3>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-3.jpg" alt="Image">
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput
-                        </p>
-                        <h2>Client Name</h2>
-                        <h3>Profession</h3>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-4.jpg" alt="Image">
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit facilis ornare velit non vulput
-                        </p>
-                        <h2>Client Name</h2>
-                        <h3>Profession</h3>
-                    </div>
+                	<c:forEach items = "${list_bl}" var = "listbinhluan">
+	                    <div class="testimonial-item">
+	                        <div class="testimonial-img">
+	                            <img src="img/anhbl.jpg" alt="Image">
+	                        </div>
+	                        <p>
+	                            ${listbinhluan.noidungbl}
+	                        </p>
+	                        <h2>${listbinhluan.tennbl}</h2>
+	                        <h3>${listbinhluan.tg_binhluan}</h3>
+	                    </div>
+                    </c:forEach>
                 </div>
             </div>
         </div>
@@ -635,8 +500,8 @@
         <div class="contact">
             <div class="container">
                 <div class="section-header text-center">
-                    <p>Contact Us</p>
-                    <h2>Contact For Any Query</h2>
+                    <p>Liên hệ chúng tôi</p>
+                    <h2>Hãy liên hệ chúng tôi khi bạn cần</h2>
                 </div>
                 <div class="row align-items-center contact-information">
                     <div class="col-md-6 col-lg-3">
@@ -645,8 +510,8 @@
                                 <i class="fa fa-map-marker-alt"></i>
                             </div>
                             <div class="contact-text">
-                                <h3>Address</h3>
-                                <p>123 Street, NY, USA</p>
+                                <h3>Địa chỉ</h3>
+                                <p>182 Lê Duẩn, Tp Vinh</p>
                             </div>
                         </div>
                     </div>
@@ -656,8 +521,8 @@
                                 <i class="fa fa-phone-alt"></i>
                             </div>
                             <div class="contact-text">
-                                <h3>Call Us</h3>
-                                <p>+012 345 6789</p>
+                                <h3>Điện thoại</h3>
+                                <p>0399 876 456</p>
                             </div>
                         </div>
                     </div>
@@ -667,8 +532,8 @@
                                 <i class="fa fa-envelope"></i>
                             </div>
                             <div class="contact-text">
-                                <h3>Email Us</h3>
-                                <p>info@example.com</p>
+                                <h3>Email</h3>
+                                <p>food247@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -692,29 +557,29 @@
                 </div>
                 <div class="row contact-form">
                     <div class="col-md-6">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1600663868074!5m2!1sen!2sbd" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.110234938391!2d105.69317477494573!3d18.659048664930197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3139cddf0bf20f23%3A0x86154b56a284fa6d!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBWaW5o!5e0!3m2!1svi!2s!4v1701870689353!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="col-md-6">
                         <div id="success"></div>
                         <form name="sentMessage" id="contactForm" novalidate="novalidate">
                             <div class="control-group">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                <input type="text" class="form-control" id="name" placeholder="Họ và tên" required="required" data-validation-required-message="Hãy nhập tên của bạn" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                <input type="email" class="form-control" id="email" placeholder="Email" required="required" data-validation-required-message="Hãy nhập email của bạn" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                <input type="text" class="form-control" id="subject" placeholder="Chủ đề" required="required" data-validation-required-message="Bạn phải nhập chủ đề" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <textarea class="form-control" id="message" placeholder="Nội dung" required="required" data-validation-required-message="Hãy nhập nội dung cho chúng tôi"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
-                                <button class="btn custom-btn" type="submit" id="sendMessageButton">Send Message</button>
+                                <button class="btn custom-btn" type="submit" id="sendMessageButton">Gửi</button>
                             </div>
                         </form>
                     </div>
@@ -728,54 +593,34 @@
         <div class="blog">
             <div class="container">
                 <div class="section-header text-center">
-                    <p>Food Blog</p>
-                    <h2>Latest From Food Blog</h2>
+                    <p>Góc ẩm thực</p>
+                    <h2>Bài viết mới nhất</h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                	<c:forEach items = "${list_bv}" var = "listbv" >
+                		<div class="col-md-6">
                         <div class="blog-item">
                             <div class="blog-img">
-                                <img src="img/blog-1.jpg" alt="Blog">
+                                <img src="${listbv.hinhanh}" alt="Blog" hidth="400px" >
                             </div>
                             <div class="blog-content">
-                                <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
+                                <h2 class="blog-title">${listbv.tenbai}</h2>
                                 <div class="blog-meta">
-                                    <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>Food</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
+                                    <p><i class="far fa-user"></i>${listbv.tacgia}</p>
+                                    <p><i class="far fa-list-alt"></i>${listbv.danhmucbv}</p>
+                                    <p><i class="far fa-calendar-alt"></i>${listbv.ngayviet}</p>
                                     <p><i class="far fa-comments"></i>10</p>
                                 </div>
                                 <div class="blog-text">
                                     <p>
-                                        Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor. Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte
+                                        ${listbv.tomtatbv}
                                     </p>
-                                    <a class="btn custom-btn" href="">Read More</a>
+                                    <a class="btn custom-btn" href="baiviet_detialServlet?id=${listbv.id_baiviet}">Xem Thêm</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="img/blog-2.jpg" alt="Blog">
-                            </div>
-                            <div class="blog-content">
-                                <h2 class="blog-title">Lorem ipsum dolor sit amet</h2>
-                                <div class="blog-meta">
-                                    <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>Food</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
-                                    <p><i class="far fa-comments"></i>10</p>
-                                </div>
-                                <div class="blog-text">
-                                    <p>
-                                        Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor. Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte
-                                    </p>
-                                    <a class="btn custom-btn" href="">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                	</c:forEach>       
                 </div>
             </div>
         </div>

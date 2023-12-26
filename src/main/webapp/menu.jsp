@@ -6,11 +6,11 @@
          <div class="container">
              <div class="row">
                  <div class="col-12">
-                     <h2>Food Menu</h2>
+                     <h2>Thực đơn nhà hàng</h2>
                  </div>
                  <div class="col-12">
-                     <a href="">Home</a>
-                     <a href="">Menu</a>
+                     <a href="homeServlet">Trang chủ</a>
+                     <a href="">Thực đơn</a>
                  </div>
              </div>
          </div>
@@ -24,8 +24,8 @@
      <div class="menu">
          <div class="container">
              <div class="section-header text-center">
-                 <p>Food Menu</p>
-                 <h2>Delicious Food Menu</h2>
+                 <p>Thực đơn chính</p>
+                 <h2>Món ăn được săn đón</h2>
              </div>
              <div class="menu-tab">
                  <ul class="nav nav-pills justify-content-center">

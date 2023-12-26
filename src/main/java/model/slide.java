@@ -17,6 +17,12 @@ public class slide {
 		this.hinhanh = hinhanh;
 		this.trangthai_slide = trangthai_slide;
 	}
+	public slide(String tieude,String noidung,String hinhanh,String trangthai_slide) {
+		this.tieude = tieude;
+		this.noidung = noidung;
+		this.hinhanh = hinhanh;
+		this.trangthai_slide = trangthai_slide;
+	}
 
 	public int getId_slide() {
 		return id_slide;

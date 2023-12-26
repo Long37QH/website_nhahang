@@ -7,11 +7,11 @@
          <div class="container">
              <div class="row">
                  <div class="col-12">
-                     <h2>Master Chef</h2>
+                     <h2>Siêu đầu bếp</h2>
                  </div>
                  <div class="col-12">
-                     <a href="">Home</a>
-                     <a href="">Chef</a>
+                     <a href="homeServlet">Trang chủ</a>
+                     <a href="">Đầu bếp</a>
                  </div>
              </div>
          </div>
@@ -24,7 +24,7 @@
          <div class="container">
              <div class="section-header text-center">
                  <p>Đội của chúng tôi</p>
-                 <h2>Our Master Chef</h2>
+                 <h2>Đội ngũ hàng đầu Việt Nam</h2>
              </div>
              <div class="row">
               	<c:forEach var="list" items = "${data}" >

@@ -27,7 +27,7 @@ public class add_baivietServlet extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
+		response.sendRedirect("admin/addbaiviet.jsp");
 	}
 
 	

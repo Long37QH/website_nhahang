@@ -14,7 +14,7 @@
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb m-0 p-0">
-                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a>
+                                    <li class="breadcrumb-item"><a href="">Quản lý slide</a>
                                     </li>
                                 </ol>
                             </nav>
@@ -81,8 +81,8 @@
                                                 </td>                   
                                                 <td>${listslide.trangthai_slide}</td>  
                                                 <td>
-                                                    <a class="btn waves-effect waves-light btn-info" href="update_nhanvienServlet?id=${list.id_nhanvien}">Sửa</a>
-                                                    <a onclick="return confirm('bạn có muốn xoá không ?');" class="btn waves-effect waves-light btn-danger" href="delete_nhanvienServlet?id=${list.id_nhanvien}">Xoá</a>
+                                                    <a class="btn waves-effect waves-light btn-info" href="suaslide_Servlet?id=${listslide.id_slide}">Sửa</a>
+                                                    <a onclick="return confirm('bạn có muốn xoá không ?');" class="btn waves-effect waves-light btn-danger" href="delete_slideServlet?id=${listslide.id_slide}">Xoá</a>
                                                 </td>
                                             </tr>
                                             </c:forEach>

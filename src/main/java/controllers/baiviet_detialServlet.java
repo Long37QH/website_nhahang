@@ -6,11 +6,16 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import model.baiviet;
+import model.binhluan;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import dal.baivietDAO;
+import dal.binhluanDAO;
 
 
 public class baiviet_detialServlet extends HttpServlet {
@@ -37,13 +42,16 @@ public class baiviet_detialServlet extends HttpServlet {
 		List<baiviet> listbv = bv2.getBaiVietAll();
 		request.setAttribute("list_bv", listbv);
 		
+		binhluanDAO bl = new binhluanDAO();
+		List<binhluan> listbinhluan = bl.getAllBinhluan();
+		request.setAttribute("list_bl", listbinhluan);
+		
 		request.getRequestDispatcher("blog_detial.jsp").forward(request, response);
 	}
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		
 	}
 
 }

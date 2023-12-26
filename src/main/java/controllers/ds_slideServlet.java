@@ -29,7 +29,7 @@ public class ds_slideServlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		slideDAO sl = new slideDAO();
-		List<slide> listslide = sl.getSlideAll();
+		List<slide> listslide = sl.getSlideAll2();
 		request.setAttribute("data", listslide);
 		request.getRequestDispatcher("admin/ds_slide.jsp").forward(request, response);
 	}

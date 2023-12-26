@@ -46,7 +46,7 @@
 	                                <h4 class="card-title">Nhập thông tin bài viết</h4>
 	                                
 	                                <c:set value="${baiviet}" var="b" />
-	                                <form action="suabv_Servlet" method="post" >
+	                                <form action="suaslide_Servlet" method="post" >
 	                                    <div class="form-body">
 	                                        <label for="tenbai" >Tiêu đề bài viết </label>
 	                                        <div class="row">	

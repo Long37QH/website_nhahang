@@ -3,7 +3,7 @@
   <display-name>Nhahang247</display-name>
   <welcome-file-list>
     <welcome-file>homeServlet</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
     <description></description>
@@ -214,5 +214,105 @@
   <servlet-mapping>
     <servlet-name>ds_slideServlet</servlet-name>
     <url-pattern>/ds_slideServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>add_slideServlet</display-name>
+    <servlet-name>add_slideServlet</servlet-name>
+    <servlet-class>controllers.add_slideServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>add_slideServlet</servlet-name>
+    <url-pattern>/add_slideServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>suaslide_Servlet</display-name>
+    <servlet-name>suaslide_Servlet</servlet-name>
+    <servlet-class>controllers.suaslide_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>suaslide_Servlet</servlet-name>
+    <url-pattern>/suaslide_Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>delete_slideServlet</display-name>
+    <servlet-name>delete_slideServlet</servlet-name>
+    <servlet-class>controllers.delete_slideServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete_slideServlet</servlet-name>
+    <url-pattern>/delete_slideServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ds_taikhoanServlet</display-name>
+    <servlet-name>ds_taikhoanServlet</servlet-name>
+    <servlet-class>controllers.ds_taikhoanServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ds_taikhoanServlet</servlet-name>
+    <url-pattern>/ds_taikhoanServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>add_taikhoanServlet</display-name>
+    <servlet-name>add_taikhoanServlet</servlet-name>
+    <servlet-class>controllers.add_taikhoanServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>add_taikhoanServlet</servlet-name>
+    <url-pattern>/add_taikhoanServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>suatk_Servlet</display-name>
+    <servlet-name>suatk_Servlet</servlet-name>
+    <servlet-class>controllers.suatk_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>suatk_Servlet</servlet-name>
+    <url-pattern>/suatk_Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>delete_tkServlet</display-name>
+    <servlet-name>delete_tkServlet</servlet-name>
+    <servlet-class>controllers.delete_tkServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete_tkServlet</servlet-name>
+    <url-pattern>/delete_tkServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>loginServlet</display-name>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>controllers.loginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>logoutServlet</display-name>
+    <servlet-name>logoutServlet</servlet-name>
+    <servlet-class>controllers.logoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logoutServlet</servlet-name>
+    <url-pattern>/logoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>add_binhluanServlet</display-name>
+    <servlet-name>add_binhluanServlet</servlet-name>
+    <servlet-class>controllers.add_binhluanServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>add_binhluanServlet</servlet-name>
+    <url-pattern>/add_binhluanServlet</url-pattern>
   </servlet-mapping>
 </web-app>

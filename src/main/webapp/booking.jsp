@@ -6,11 +6,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Book A Table</h2>
+                        <h2>Đặt bàn</h2>
                     </div>
                     <div class="col-12">
-                        <a href="">Home</a>
-                        <a href="">Booking</a>
+                        <a href="homeServlet">Trang chủ</a>
+                        <a href="">Đặt bàn ngay</a>
                     </div>
                 </div>
             </div>

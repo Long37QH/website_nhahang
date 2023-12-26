@@ -37,6 +37,35 @@ public class nhanvienDAO extends DBConnect {
 		}
 		return list;
 	}
+	public List<nhanvien>getNhanVienAllhome(){
+		List<nhanvien> list = new ArrayList<>();
+		String sql = "SELECT * FROM tbl_nhanvien ORDER BY id_nhanvien LIMIT 4";
+	
+		try {
+			PreparedStatement ps = connection.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+			int id_nhanvien;
+			String tenNV, chuVu, hinhanh, sdt, email, diachi, gioitinh;
+			
+			while(rs.next()) {
+				
+				id_nhanvien = rs.getInt("id_nhanvien");
+				tenNV =rs.getString("tenNV");
+				chuVu = rs.getString("ChuVu");
+				hinhanh = rs.getString("hinhanh");
+				sdt = rs.getString("sdt");
+				email = rs.getString("email");
+				diachi = rs.getString("diachi");
+				gioitinh = rs.getString("gioitinh");
+				nhanvien nv = new nhanvien(id_nhanvien,tenNV, chuVu,hinhanh, sdt, email, diachi, gioitinh);
+				list.add(nv);
+			}
+			
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
 	public List<nhanvien>getNhanVienAll2(){
 		List<nhanvien> list = new ArrayList<>();
 		String sql = "SELECT * FROM tbl_nhanvien ";

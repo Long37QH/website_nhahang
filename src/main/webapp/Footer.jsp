@@ -23,11 +23,11 @@
                             <div class="col-md-6">
                                 <div class="footer-link">
                                     <h2>Danh Mục</h2>
-                                    <a href="">Đầu Bếp</a>
-                                    <a href="">Giới Thiệu</a>
-                                    <a href="">Thực Đơn</a>
-                                    <a href="">Đặt Bàn</a>
-                                    <a href="">Liên Hệ</a>
+                                    <a href="nhanvienServlet">Đầu Bếp</a>
+                                    <a href="gioithieuServlet">Giới Thiệu</a>
+                                    <a href="thucdonServlet">Thực Đơn</a>
+                                    <a href="booking.jsp">Đặt Bàn</a>
+                                    <a href="contact.jsp">Liên Hệ</a>
                                 </div>
                             </div>
                         </div>

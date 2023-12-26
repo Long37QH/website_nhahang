@@ -38,6 +38,36 @@ public class baivietDAO extends DBConnect{
 		}
 		return listbv;
 	}
+	
+	public List<baiviet> getBaiVietAllhome(){
+		List<baiviet> listbv = new ArrayList<>();
+		String sql = "SELECT * FROM tbl_baiviet where trangthaibv = 'Hiển thị' ORDER BY id_baiviet DESC LIMIT 2";
+		try {
+			PreparedStatement ps = connection.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()) {
+				int id_baiviet;
+				String tenbai,danhmucbv,tomtatbv,noidung,hinhanh,tacgia,trangthaibv,ngayviet;
+				
+				
+				id_baiviet = rs.getInt("id_baiviet");
+				tenbai = rs.getString("tenbai");
+				danhmucbv = rs.getString("danhmucbv");
+				tomtatbv = rs.getString("tomtatbv");
+				noidung = rs.getString("noidung");
+				hinhanh = rs.getString("hinhanh");
+				tacgia = rs.getString("tacgia");
+				ngayviet = rs.getString("ngayviet");
+				trangthaibv = rs.getString("trangthaibv");
+				
+				baiviet b = new baiviet(id_baiviet,tenbai,danhmucbv,tomtatbv,noidung,hinhanh,tacgia,ngayviet,trangthaibv);
+				listbv.add(b);
+			}
+		}catch(SQLException e) {
+			e.printStackTrace();
+		}
+		return listbv;
+	}
 	// list danh sách admin
 	public List<baiviet> getBaiVietAll2(){
 		List<baiviet> listbv = new ArrayList<>();
