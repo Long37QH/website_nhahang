@@ -128,8 +128,8 @@
                                                 <td>${listtaikhoan.tentk}</td>                   
                                                 <td>${listtaikhoan.pass}</td>  
                                                 <td>
-                                                    <a class="btn waves-effect waves-light btn-info" href="suatk_Servlet?id=${listtaikhoan.id_tk}">Sửa</a>
-                                                    <a onclick="return confirm('bạn có muốn xoá không ?');" class="btn waves-effect waves-light btn-danger" href="delete_tkServlet?id=${listtaikhoan.id_tk}">Xoá</a>
+                                                    <a class="btn waves-effect waves-light btn-info" href="suatk_Servlet?id=${listtaikhoan.id_tk}"><i class="fa-solid fa-wrench"></i> Sửa</a>
+                                                    <a onclick="return confirm('bạn có muốn xoá không ?');" class="btn waves-effect waves-light btn-danger" href="delete_tkServlet?id=${listtaikhoan.id_tk}"><i class="fa-solid fa-trash-can"></i> Xoá</a>
                                                 </td>
                                             </tr>
                                             </c:forEach>

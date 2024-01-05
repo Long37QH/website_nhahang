@@ -12,8 +12,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
+    
+    <title>Trang admin</title>
     <!-- Custom CSS -->
     <link href="assets/extra-libs/c3/c3.min.css" rel="stylesheet">
     <link href="assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
@@ -22,6 +22,7 @@
     <link href="dist/css/style.min.css" rel="stylesheet">
     <!-- This page plugin CSS -->
     <link href="assets/extra-libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -244,7 +245,7 @@
                     <ul id="sidebarnav">
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="#"
                                 aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
-                                    class="hide-menu">Dashboard</span></a></li>
+                                    class="hide-menu">Trang quản trị</span></a></li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Quản lý trang</span></li>
 
@@ -279,19 +280,22 @@
                                 aria-expanded="false"><i data-feather="grid" class="feather-icon"></i><span
                                     class="hide-menu">Quản lý bàn </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
-                                            class="hide-menu"> Danh Sách đặt bàn
+                                <li class="sidebar-item"><a href="../ds_banServlet" class="sidebar-link"><span
+                                            class="hide-menu"> Danh Sách bàn trống
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
-                                            class="hide-menu"> Quản lý bàn
+                                <li class="sidebar-item"><a href="../ds_khachdatbanServlet" class="sidebar-link"><span
+                                            class="hide-menu"> Khách đặt trước bàn
+                                        </span></a>
+                                </li>
+                                <li class="sidebar-item"><a href="../ds_banpvuServlet" class="sidebar-link"><span class="hide-menu"> Bàn đang phục vụ
                                         </span></a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="#"
-                                aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
-                                    class="hide-menu">Khách hàng</span></a>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="../ds_khachhangServlet" aria-expanded="false"><i
+                                    data-feather="message-square" class="feather-icon"></i><span class="hide-menu">
+                                    Thống kê Khách hàng</span></a>
                         </li>
                         </li>
 
@@ -424,8 +428,8 @@
 	                                    </div>
 	                                    <div class="form-actions">
 	                                        <div class="text-left mt-3 ">
-	                                            <button type="submit" class="btn btn-info">Lưu lại</button>
-	                                            <button type="reset" class="btn btn-dark">Huỷ</button>
+	                                            <button type="submit" class="btn btn-info"><i class="fa-solid fa-floppy-disk"></i> Lưu lại</button>
+	                                            <button type="reset" class="btn btn-dark"><i class="fa-regular fa-circle-xmark"></i> Huỷ</button>
 	                                        </div>
 	                                    </div>
 	                                </form>

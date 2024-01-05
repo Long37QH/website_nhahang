@@ -41,7 +41,8 @@ public class loginServlet extends HttpServlet {
 		}else {
 			HttpSession session = request.getSession();
 			session.setAttribute("tentk", t);
-			request.getRequestDispatcher("admin/index.jsp").forward(request, response);
+			//request.getRequestDispatcher("admin/index.jsp").forward(request, response);
+			request.getRequestDispatcher("ds_banServlet").forward(request, response);
 		}
 	}
 

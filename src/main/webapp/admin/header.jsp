@@ -275,17 +275,21 @@
                                 aria-expanded="false"><i data-feather="grid" class="feather-icon"></i><span
                                     class="hide-menu">Quản lý bàn </span></a>
                             <ul aria-expanded="false" class="collapse  first-level base-level-line">
-                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span class="hide-menu"> Danh Sách đặt bàn
+                                <li class="sidebar-item"><a href="ds_banServlet" class="sidebar-link"><span class="hide-menu"> Danh Sách bàn trống
                                         </span></a>
                                 </li>
-                                <li class="sidebar-item"><a href="#" class="sidebar-link"><span class="hide-menu"> Quản lý bàn
+                                <li class="sidebar-item"><a href="ds_khachdatbanServlet" class="sidebar-link"><span class="hide-menu"> Khách đặt trước bàn
+                                        </span></a>
+                                </li>
+                                
+                                <li class="sidebar-item"><a href="ds_banpvuServlet" class="sidebar-link"><span class="hide-menu"> Bàn đang phục vụ
                                         </span></a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="#" aria-expanded="false"><i
-                                    data-feather="message-square" class="feather-icon"></i><span class="hide-menu">Khách
-                                    hàng</span></a>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="ds_khachhangServlet" aria-expanded="false"><i
+                                    data-feather="message-square" class="feather-icon"></i><span class="hide-menu">
+                                    Thống kê Khách hàng</span></a>
                         </li>
                         </li>
 

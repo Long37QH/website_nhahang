@@ -81,8 +81,8 @@
                                                 </td>                   
                                                 <td>${listslide.trangthai_slide}</td>  
                                                 <td>
-                                                    <a class="btn waves-effect waves-light btn-info" href="suaslide_Servlet?id=${listslide.id_slide}">Sửa</a>
-                                                    <a onclick="return confirm('bạn có muốn xoá không ?');" class="btn waves-effect waves-light btn-danger" href="delete_slideServlet?id=${listslide.id_slide}">Xoá</a>
+                                                    <a class="btn waves-effect waves-light btn-info" href="suaslide_Servlet?id=${listslide.id_slide}"><i class="fa-solid fa-wrench"></i> Sửa</a>
+                                                    <a onclick="return confirm('bạn có muốn xoá không ?');" class="btn waves-effect waves-light btn-danger" href="delete_slideServlet?id=${listslide.id_slide}"><i class="fa-solid fa-trash-can"></i> Xoá</a>
                                                 </td>
                                             </tr>
                                             </c:forEach>

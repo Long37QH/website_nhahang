@@ -105,8 +105,8 @@
 													</c:if>
                                                 </td>
                                                 <td>
-                                                    <a class="btn waves-effect waves-light btn-info" href="sua_thudonServlet?id=${item.id}">Sửa</a>
-                                                    <a onclick="return confirm('bạn có muốn xoá không ?');" class="btn waves-effect waves-light btn-danger" href="delete_thucdonServlet?id=${item.id}">Xoá</a>
+                                                    <a class="btn waves-effect waves-light btn-info" href="sua_thudonServlet?id=${item.id}"><i class="fa-solid fa-wrench"></i> Sửa</a>
+                                                    <a onclick="return confirm('bạn có muốn xoá không ?');" class="btn waves-effect waves-light btn-danger" href="delete_thucdonServlet?id=${item.id}"><i class="fa-solid fa-trash-can"></i> Xoá</a>
                                                 </td>
                                             </tr>
                                             </c:if>

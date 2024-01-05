@@ -99,8 +99,8 @@
 	                                        
 	                                    <div class="form-actions">
 	                                        <div class="text-left mt-3 ">
-	                                            <button type="submit" class="btn btn-info">Lưu lại</button>
-	                                            <button type="reset" class="btn btn-dark">Huỷ</button>
+	                                            <button type="submit" class="btn btn-info"><i class="fa-solid fa-floppy-disk"></i> Lưu lại</button>
+	                                            <button type="reset" class="btn btn-dark"><i class="fa-regular fa-circle-xmark"></i> Huỷ</button>
 	                                        </div>
 	                                    </div>
 	                                </form>

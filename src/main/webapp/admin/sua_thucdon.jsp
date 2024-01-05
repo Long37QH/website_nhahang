@@ -46,7 +46,7 @@
                         <h4 class="card-title">Nhập thông tin món ăn</h4>
                         <form action="sua_thudonServlet" method="post">
                             <div class="form-body">
-									<input type="hidden" name="id" id="id" value="${td.id}">
+									<input type="hidden" name="id" id="id"  value="${td.id}">
                                 <label for="tenMonAn">Tên món ăn </label>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -146,7 +146,7 @@
 
                             <div class="form-actions">
                                 <div class="text-left mt-3">
-                                    <button type="submit" class="btn btn-info">Lưu lại</button>
+                                    <button type="submit" class="btn btn-info"><i class="fa-solid fa-floppy-disk"></i> Lưu lại</button>
                                     <a href="./ds_thucdonServlet" class="btn btn-dark">Quay lại</a>
                                 </div>
                             </div>

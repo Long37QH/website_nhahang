@@ -5,7 +5,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Nhà hàng - Food PaTo</title>
+        <title>Nhà hàng - Food247</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
@@ -40,11 +40,11 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="homeServlet" class="nav-item nav-link active">Trang chủ</a>
+                        <a href="homeServlet" class="nav-item nav-link ">Trang chủ</a>
                         <a href="gioithieuServlet" class="nav-item nav-link">Giới thiệu</a>
                         <a href="nhanvienServlet" class="nav-item nav-link">Đầu bếp</a>
                         <a href="thucdonServlet" class="nav-item nav-link">Thực đơn</a>
-                        <a href="booking.jsp" class="nav-item nav-link">Đặt bàn</a>
+                        <a href="datbanServlet" class="nav-item nav-link">Đặt bàn</a>
                         <a href="baivietServlet" class="nav-item nav-link">Bài viết</a>
                         <!--  <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Bài viết</a>

@@ -26,7 +26,7 @@
                                     <a href="nhanvienServlet">Đầu Bếp</a>
                                     <a href="gioithieuServlet">Giới Thiệu</a>
                                     <a href="thucdonServlet">Thực Đơn</a>
-                                    <a href="booking.jsp">Đặt Bàn</a>
+                                    <a href="datbanServlet">Đặt Bàn</a>
                                     <a href="contact.jsp">Liên Hệ</a>
                                 </div>
                             </div>

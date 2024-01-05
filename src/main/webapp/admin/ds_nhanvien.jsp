@@ -89,8 +89,8 @@
                                                 <td>${list.diachi}</td>
                                                
                                                 <td>
-                                                    <a class="btn waves-effect waves-light btn-info" href="update_nhanvienServlet?id=${list.id_nhanvien}">Sửa</a>
-                                                    <a onclick="return confirm('bạn có muốn xoá không ?');" class="btn waves-effect waves-light btn-danger" href="delete_nhanvienServlet?id=${list.id_nhanvien}">Xoá</a>
+                                                    <a class="btn waves-effect waves-light btn-info" href="update_nhanvienServlet?id=${list.id_nhanvien}"><i class="fa-solid fa-wrench"></i> Sửa</a>
+                                                    <a onclick="return confirm('bạn có muốn xoá không ?');" class="btn waves-effect waves-light btn-danger" href="delete_nhanvienServlet?id=${list.id_nhanvien}"><i class="fa-solid fa-trash-can"></i> Xoá</a>
                                                 </td>
                                             </tr>
                                             </c:forEach>

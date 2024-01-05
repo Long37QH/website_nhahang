@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <%@include file="Header.jsp" %>
 <!-- Page Header Start -->
         <div class="page-header mb-0">
@@ -10,7 +11,7 @@
                     </div>
                     <div class="col-12">
                         <a href="homeServlet">Trang chủ</a>
-                        <a href="">Đặt bàn ngay</a>
+                        <a href="#datban">Đặt ngay</a>
                     </div>
                 </div>
             </div>
@@ -25,25 +26,28 @@
                     <div class="col-lg-7">
                         <div class="booking-content">
                             <div class="section-header">
-                                <p>Book A Table</p>
-                                <h2>Book Your Table For Private Dinners & Happy Hours</h2>
+                                <p>Đặt bàn ăn cho gia đình</p>
+                                <h2>Đặt bàn để có bữa tối riêng tư vào giờ khuyến mãi</h2>
                             </div>
                             <div class="about-text">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
+                                    Ưu đãi tặng kèm: Giảm 10%/Tổng hóa đơn - Áp dụng hết ngày 31/12/2023.
                                 </p>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
+                                    Ưu đãi không được áp dụng các ngày lễ như: Tháng 1 ( Ngày 1); Tháng 2 (Ngày 14); Tháng 3 (Ngày 8); Tháng 4 (Ngày 30); Tháng 5 (Ngày 1); Tháng 6 (Ngày 1); Tháng 9 (Ngày 2); Tháng 10 (Ngày 20); Tháng 11 (Ngày 20); Tháng 12 (Ngày 24, 25, 31) & 10/3 Âm Lịch
+                                </p>
+                                 <p>
+                                   Quý khách vui lòng đặt chỗ trước ít nhất 30 phút để được phục vụ tốt nhất.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <div class="booking-form">
-                            <form>
+                        <div class="booking-form" style="background-color: #880000;" id="datban" >
+                            <form action="datbanServlet" method="post"  >
                                 <div class="control-group">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Name" required="required" />
+                                        <input type="text" class="form-control" placeholder="Tên khách hàng" name="tenkhachhang" required="phai nhập tên" />
                                         <div class="input-group-append">
                                             <div class="input-group-text"><i class="far fa-user"></i></div>
                                         </div>
@@ -51,7 +55,15 @@
                                 </div>
                                 <div class="control-group">
                                     <div class="input-group">
-                                        <input type="email" class="form-control" placeholder="Email" required="required" />
+                                        <input type="text" class="form-control" placeholder="Số người" name="songuoi" required="required" />
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="far fa-user"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" placeholder="Email khách hàng" name="email" required="required" />
                                         <div class="input-group-append">
                                             <div class="input-group-text"><i class="far fa-envelope"></i></div>
                                         </div>
@@ -59,7 +71,7 @@
                                 </div>
                                 <div class="control-group">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Mobile" required="required" />
+                                        <input type="text" class="form-control" placeholder="Số điện thoại" name="sdt" required="required" />
                                         <div class="input-group-append">
                                             <div class="input-group-text"><i class="fa fa-mobile-alt"></i></div>
                                         </div>
@@ -67,7 +79,7 @@
                                 </div>
                                 <div class="control-group">
                                     <div class="input-group date" id="date" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker"/>
+                                        <input type="text" class="form-control datetimepicker-input" placeholder="Ngày đặt bàn" name="ngaydat" data-target="#date" data-toggle="datetimepicker"/>
                                         <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
                                             <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
                                         </div>
@@ -75,26 +87,19 @@
                                 </div>
                                 <div class="control-group">
                                     <div class="input-group time" id="time" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker"/>
+                                        <input type="text" class="form-control datetimepicker-input" placeholder="Giờ" name="giodat" data-target="#time" data-toggle="datetimepicker"/>
                                         <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
                                             <div class="input-group-text"><i class="far fa-clock"></i></div>
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div class="control-group">
-                                    <div class="input-group">
-                                        <select class="custom-select form-control">
-                                            <option selected>Guest</option>
-                                            <option value="1">1 Guest</option>
-                                            <option value="2">2 Guest</option>
-                                            <option value="3">3 Guest</option>
-                                            <option value="4">4 Guest</option>
-                                            <option value="5">5 Guest</option>
-                                            <option value="6">6 Guest</option>
-                                            <option value="7">7 Guest</option>
-                                            <option value="8">8 Guest</option>
-                                            <option value="9">9 Guest</option>
-                                            <option value="10">10 Guest</option>
+                                    <div class="input-group" >
+                                        <select class="custom-select form-control " name="id_ban" style="background-color: #880000;">
+                                            <c:forEach var="list" items = "${data}" >
+                                            	<option value="${list.id_ban}">Bàn số ${list.id_ban}</option>       
+                                            </c:forEach>
                                         </select>
                                         <div class="input-group-append">
                                             <div class="input-group-text"><i class="fa fa-chevron-down"></i></div>
@@ -102,7 +107,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <button class="btn custom-btn" type="submit">Book Now</button>
+                                    <button class="btn custom-btn" type="submit" >Đặt bàn</button>
                                 </div>
                             </form>
                         </div>

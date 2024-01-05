@@ -10,12 +10,12 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-7 align-self-center">
-                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Sửa thông tin bài viết</h4>
+                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Xứ lý nhận bàn</h4>
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb m-0 p-0">
                                     <li class="breadcrumb-item"><a href="index.html" class="text-muted">Trang quản trị</a></li>
-                                    <li class="breadcrumb-item text-muted active" aria-current="page">Sửa bài viết</li>
+                                    <li class="breadcrumb-item text-muted active" aria-current="page">Xử lý bàn</li>
                                 </ol>
                             </nav>
                         </div>
@@ -43,77 +43,79 @@
 	                    <div class="col-12">
 	                        <div class="card">
 	                            <div class="card-body">
-	                                <h4 class="card-title">Nhập thông tin nhân viên</h4>
+	                                <h4 class="card-title">Xử lý thông tin bàn</h4>
 	                                
-	                                <c:set value="${nhanvien}" var="n" />
-	                                <form action="update_nhanvienServlet" method="post" >
+	                                <c:set value="${ban}" var="n" />
+	                                <form action="update_banServlet" method="post" >
 	                                     <div class="form-body">
-	                                        <label for="tenNV" >Tên nhân viên </label>
+	                    
+	                                        <label for="vitri" >Bàn số :</label>
 	                                        <div class="row">
-	                                            <div class="col-md-4">
+	                                             <div class="col-md-6">
 	                                                <div class="form-group">
-	                                                    <input type="text" name="tenNV" id="tenNV" value="${n.tenNV}" class="form-control" placeholder="">
+	                                                    <input type="text" name="id_ban" id="id_ban" value="${n.id_ban}" class="form-control" readonly placeholder="">
 	                                                </div>
-	                                            </div>
+	                                            </div>   
+	                                        </div>
+	                                        
+	                                        <label for="tenkhachhang" >Tên khách hàng :</label>
+	                                        <div class="row">
+	                                             <div class="col-md-6">
+	                                                <div class="form-group">
+	                                                    <input type="text" name="tenkhachhang" id="tenkhachhang" value="Khách hàng bình thường" class="form-control"  placeholder="">
+	                                                </div>
+	                                            </div>   
+	                                        </div>
+	                                        
+	                                        <label for="email" >Email :</label>
+	                                        <div class="row">
+	                                             <div class="col-md-6">
+	                                                <div class="form-group">
+	                                                    <input type="text" name="email" id="email"  class="form-control"  placeholder="">
+	                                                </div>
+	                                            </div>   
+	                                        </div>
+	                                        
+	                                        <label for="sdt" >Số điện thoại :</label>
+	                                        <div class="row">
+	                                             <div class="col-md-6">
+	                                                <div class="form-group">
+	                                                    <input type="text" name="sdt" id="sdt" class="form-control"  placeholder="">
+	                                                </div>
+	                                            </div>   
+	                                        </div>
+	                                        
+	                                        <label for="songuoi" >Số người :</label>
+	                                        <div class="row">
 	                                             <div class="col-md-3">
 	                                                <div class="form-group">
-	                                                    <input type="text" name="id_nhanvien" id="id_nhanvien" value="${n.id_nhanvien}" class="form-control" readonly placeholder="">
+	                                                    <input type="songuoi" name="songuoi" id="songuoi"  class="form-control"  placeholder="">
 	                                                </div>
-	                                            </div>
+	                                            </div>   
 	                                        </div>
-	                                        <label for="hinhanh" >Hình ảnh </label>
-	                                        <div class="row">
-	                                        	<div class="col-md-9">
-		                                            <div class="form-group">
-	                                                    <input type="text" name="hinhanh" id="hinhanh" value="${n.hinhanh}" class="form-control" placeholder="">
-	                                                </div>
-                                                </div>
-	                                        </div>
-	                                        <label for="chuVu" >Chức vụ </label>
-	                                        <div class="row">
-	                                            <div class="col-md-3">
-	                                                <div class="form-group">
-	                                                    <input type="text" name="chuVu" id="chuVu" value="${n.chuVu}" class="form-control" placeholder="">
-	                                                </div>
-	                                            </div>
-	                                        </div>
-	   
-	          
-	                                       <label for="sdt" >Số điện thoại</label>
-	                                        <div class="row">
-	                                            <div class="col-md-6">
-	                                                <div class="form-group">
-	                                                    <input type="text" name="sdt" id="sdt" value="${n.sdt}" class="form-control" placeholder="">
-	                                                </div>
-	                                            </div>
-	                                        </div>
-	                                        <label for="email" >Email</label>
-	                                        <div class="row">
-	                                            <div class="col-md-6">
-	                                                <div class="form-group">
-	                                                    <input type="text" name="email" id="email" value="${n.email}" class="form-control" placeholder="">
-	                                                </div>
-	                                            </div>
-	                                        </div>
-	                                        <label for="diachi" >Địa chỉ</label>
-	                                        <div class="row">
-	                                            <div class="col-md-6">
-	                                                <div class="form-group">
-	                                                    <input type="text" name="diachi" id="diachi" value="${n.diachi}" class="form-control" placeholder="">
-	                                                </div>
-	                                            </div>
-	                                        </div>
-	                                         
 	                                        
-	                         
-	                                        <label for="gioitinh" >Giới tính</label>
+	                                        <label for="tg_phucvu" >Thời gian phục vụ :</label>
+	                                        <div class="row">
+	                                             <div class="col-md-6">
+	                                                <div class="form-group">
+	                                                    <input type="datetime-local" name="tg_phucvu" id="tg_phucvu"  class="form-control"  placeholder="">
+	                                                </div>
+	                                            </div>   
+	                                        </div>
+	                                        
+	                                        <label>Trạng thái bàn </label>
 	                                        <div class="row">
 	                                            <div class="col-md-6">
-	                                                <div class="form-group">
-	                                                    <input type="text" name="gioitinh" id="gioitinh" value="${n.gioitinh}" class="form-control" placeholder="">
-	                                                </div>
+	                                                <select class="custom-select mr-sm-2 " name="trangthaiban" id="trangthaiban">
+			                                            <option value="Trống">Trống</option>
+			                                            <option value="Bàn đặt trước">Bàn đặt trước</option>
+			                                             <option value="Đang phục vụ">Đang phục vụ</option>
+			                                        </select>
 	                                            </div>
 	                                        </div>
+
+	                                        </div>
+
 	                                    <div class="form-actions">
 	                                        <div class="text-left mt-3 ">
 	                                            <button type="submit" class="btn btn-info"><i class="fa-solid fa-floppy-disk"></i> Lưu lại</button>
